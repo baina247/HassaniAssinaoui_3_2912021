@@ -1,0 +1,16 @@
+{
+  "name": "hassaniassinaoui_3_29122021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baina247/HassaniAssinaoui_3_29122021"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/baina247/HassaniAssinaoui_3_29122021#readme"
+}
