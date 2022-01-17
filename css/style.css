@@ -1,0 +1,10 @@
+@font-face
+{	/*nouvelle police nommée Shrikhand*/
+	font-family: 'Shrikhand';
+	src:url('../polices/Shrikhand-Regular.otf')
+}
+
+*
+{
+    font-family: 'Shrikhand';
+}
