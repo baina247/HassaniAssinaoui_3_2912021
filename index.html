@@ -11,8 +11,7 @@
 </head>
 <body>
     <header>
-        <span alt="logo OhMyFood" class="logo_ohmyfood logo_ohmyfood--header">OhMyFood</span>
-        
+        <span class="logo_header">ohmyfood</span>
         <!--barre de recherche-->
         <div class="container_research">
             <div class="icon_location">
@@ -24,89 +23,95 @@
         <div class="select">
             <h1>Réserver le menu qui vous convient</h1>
             <h2>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
-            <button class="bouton_explorer"><span>Explorer nos restaurants</span></button>
+            <span>Explorer nos restaurants</span>
         </div>
     </header>
     <main>
         <!--listes des choix-->
-        
         <section>
             <h2>Fonctionnement</h2>
-            <div class="container_choice">
-                
-                <div>
-                    <ol>
-                        <li>
-                            <div class="select_list select_list--hover">
-                                <button class="button_choice"><i class="fas fa-mobile-alt fa-mobile--hover"></i><span>Choisissez un restaurant</span></button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="select_list select_list--hover">
-                                <button class="button_compose"><i class="fas fa-list-ul fa-list--hover"></i><span>Composez votre menu</span></button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="select_list select_list--hover">
-                                <button class="button_taste"><i class="fas fa-store fa-store--hover"></i><span>Dégustez au restaurant</span></button>
-                            </div>
-                        </li>
-                    </ol>
+                <div class="container_choice">
+                    <div>
+                        <ol>
+                            <li>
+                                <div class="select_list select_list--hover">
+                                    <i class="fas fa-mobile-alt fa-mobile--hover"></i><span><a href="#restaurants">Choisissez un restaurant</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="select_list select_list--hover">
+                                    <i class="fas fa-list-ul fa-list--hover"></i><span><a href="#menu">Composez votre menu</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="select_list select_list--hover">
+                                    <i class="fas fa-store fa-store--hover"></i><span><a href="#">Dégustez au restaurant</a></span>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
-            </div>
         </section>
         <!--restaurants-->
         <section class="liste_restaurants">
-            <div class="restaurants">
+            <div id="restaurants">
                 <h2 class="restaurant__titre">Restaurants</h2>
                 <article class="container_restaurants">
-                    <div class="restaurants_carte restaurant_palette_du_gout image_palette_du_gout"></div>
-                    <div class="restaurant_info">
-                        <h4 >La palette du goût</h4>
-                        <p>Ménilmontant</p>
-                        <i class="far fa-heart restaurant__icone restaurant__icone--selected"></i>
+                    <div onclick="window.open('#')" class="restaurant_map">
+                        <div class="restaurant_palette_du_gout restaurants_images"></div>
+                        <div class="restaurant_info">
+                            <h4 >La palette du goût</h4>
+                            <p>Ménilmontant</p>
+                            <i class="far fa-heart restaurant__icone restaurant__icone--selected"></i>
+                        </div>
                     </div>
-                    <div class="restaurant__carte restaurant_note_enchantee image_note_enchantee"></div>
-                    <div class="restaurant_info">
-                        <h4>La note enchantée</h4>
-                        <p>Charonne</p>
-                        <i class="far fa-heart restaurant__icone restaurant__icone--selected"></i>
+                    <div onclick="window.open('#')" class="restaurant_map">
+                        <div class="restaurant_note_enchantee restaurants_images"></div>
+                        <div class="restaurant_info">
+                            <h4>La note enchantée</h4>
+                            <p>Charonne</p>
+                            <i class="far fa-heart restaurant__icone restaurant__icone--selected"></i>
+                        </div>
                     </div>
-                    <div class="restaurant_carte restaurant_a_la_francaise image_a_la_francaise"></div>
-                    <div class="restaurant_info">
-                        <h4>A la française</h4>
-                        <p>Cité Rouge</p>
-                        <i class="far fa-heart restaurant__icone restaurant__icone--selected"></i>
+                    <div onclick="window.open('#')" class="restaurant_map">
+                        <div class="restaurant_a_la_francaise restaurants_images"></div>
+                        <div class="restaurant_info">
+                            <h4>A la française</h4>
+                            <p>Cité Rouge</p>
+                            <i class="far fa-heart restaurant__icone restaurant__icone--selected"></i>
+                        </div>
                     </div>
-                    <div class="restaurant_carte restaurant_delice_des_sens image_delice_des_sens"></div>
-                    <div class="restaurant_info">
-                        <h4>Le délice des sens</h4>
-                        <p>Folie-Méricourt</p>
-                        <i class="far fa-heart restaurant__icone restaurant__icone--selected"></i>
+                    <div onclick="window.open('#')" class="restaurant_map">
+                        <div class="restaurant_delice_des_sens restaurants_images"></div>
+                        <div class="restaurant_info">
+                            <h4>Le délice des sens</h4>
+                            <p>Folie-Méricourt</p>
+                            <i class="far fa-heart restaurant__icone restaurant__icone--selected"></i>
+                        </div>
                     </div>
-                </article>    
-            </div>
+                </article>
+            </div>    
         </section>
     </main>
     <!--bas de page-->
-    <footer id="page_end">
-        <div class="container_footer">
-            <span alt="logo OhMyFood" class="logo__ohmyfood--footer">OhMyFood</span>
-            <div class="proposer">
-                <i class="fas fa-utensils"></i>
-                <h3><a href="#">Proposer un restaurant</a></h3>
+    <footer id="end_page">
+            <div class="container_footer">
+                <span class="logo_footer">ohmyfood</span>
+                <div class="proposed">
+                    <i class="fas fa-utensils"></i>
+                    <h3><a href="#">Proposer un restaurant</a></h3>
+                </div>
+                <div class="become">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3><a href="#">Devenir partenaire</a></h3>
+                </div>
+                <div class="mentions">
+                    <h3><a href="#" >Mentions légales</a></h3>
+                </div>
+                <div class="contact">
+                    <h3><a href="#">Contact</a></h3>
+                </div>
             </div>
-            <div class="devenir">
-                <i class="fas fa-hands-helping"></i>
-                <h3><a href="#">Devenir partenaire</a></h3>
-            </div>
-            <div class="mentions">
-                <h3><a href="#" >Mentions légales</a></h3>
-            </div>
-            <div class="contact">
-                <h3><a href="#">Contact</a></h3>
-            </div>
-        </div>
     </footer>    
 </body>
 </html>
