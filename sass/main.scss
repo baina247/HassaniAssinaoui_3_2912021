@@ -7,9 +7,37 @@ body{
     padding: 0;
     height: 100vh;
     position: relative;
-    font-family: 'Roboto', Shrikhand;
-    .logo_header, .logo_footer{
+    font-family: 'Roboto', Shrikhand;    
+}
+header{
+    .logo_header{
+        display: block;
+        width: 100%;
         font-family: Shrikhand;
+        font-size: 40px;
+        text-align: center;
+    }
+}
+footer{
+    background-color: #434343;
+    color: #FFF;
+    padding: 20px;
+    .logo_footer{
+        display: block;
+        width: 100%;
+        font-family: Shrikhand;
+        font-size: 20px;
+    }
+    .container_footer{
+        display: flex;
+        flex-wrap: wrap;
+        .fas{
+            padding: 0 10px 0 0;
+        }
+        .proposed{
+            width: 100%;
+            
+        }
     }
 }
 
@@ -18,8 +46,9 @@ li{
 }
 a{
     text-decoration: none;
+    color: #FFF;
     &:visited{
-        color: purple;
+        color: none;
     }
 }
 
