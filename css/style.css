@@ -3,8 +3,6 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  position: relative;
   font-family: "Roboto", Shrikhand;
 }
 
@@ -32,8 +30,24 @@ header .location #search {
   background-color: #eaeaea;
   border-style: none;
 }
-header .location #search .placeholder {
-  font-weight: 300px;
+header .select {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 0 50px 0;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+header .select h1 {
+  width: 75%;
+}
+header .select h2 {
+  width: 75%;
+}
+header .select .exploration {
+  border-radius: 20px;
+  border: 1px solid green;
+  padding: 10px;
 }
 
 footer {
@@ -50,6 +64,7 @@ footer .logo_footer {
 footer .container_footer {
   display: flex;
   flex-wrap: wrap;
+  font-size: 10px;
 }
 footer .container_footer .fas {
   padding: 0 10px 0 0;
@@ -87,7 +102,7 @@ a:visited {
   margin: 20px;
   border-radius: 20px;
   box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
-  background-color: #612725;
+  background-color: #f6f6f6;
   transition: transform 0.2s;
 }
 
