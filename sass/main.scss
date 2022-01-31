@@ -161,6 +161,11 @@ main{
     padding: 0 20px 0 20px;
     height: 5em;
     width: 85%;
+    &:hover{
+        >.far{
+            color: $linear-gradient;
+        }
+    }
 }
 .select_list{
     display: flex;
@@ -170,20 +175,21 @@ main{
     justify-content: space-evenly;
     align-items: center;
     &:hover{
-        background: $colour-variant;
+        background-color: $colour-variant;
+        >.fas{
+            color: $colour-primary;
+        }
     }
     a{
         color: black;
         font: caption;
     }
-    .fas{
+    >.fas{
         color: rgb(126, 126, 126);
         width: 10%;
         align-self: center;
         text-align-last: center;
-        &:hover{
-            color: $colour-primary;
-        }
+
     }
     .number{
         display: flex;
