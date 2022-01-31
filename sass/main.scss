@@ -49,11 +49,12 @@ header{
             border-radius: 20px;
             border: 1px solid green;
             padding: 10px;
+            background-color: $colour-primary;
         }
     }
 }
 footer{
-    background-color: #434343;
+    background-color: $colour-gray;
     color: #FFF;
     padding: 20px;
     .logo_footer{
@@ -69,16 +70,7 @@ footer{
         .fas{
             padding: 0 10px 0 0;
         }
-        .proposed{
-            width: 100%;
-        }
-        .become{
-            width: 100%;
-        }
-        .mentions{
-            width: 100%;
-        }
-        .contact{
+        .footer_choice{
             width: 100%;
         }
     }
@@ -100,10 +92,9 @@ a{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 100%;
     margin: 20px; 
     border-radius: 20px;
-    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .2);
+    box-shadow: $box-shadow;
     background-color: rgb(246, 246, 246);
     transition: transform .2s;   
 }
