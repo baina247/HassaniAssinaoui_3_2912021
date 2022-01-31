@@ -1,17 +1,201 @@
-/* Error: Undefined variable.
- *     ,
- * 166 |             color: $linear-gradient;
- *     |                    ^^^^^^^^^^^^^^^^
- *     '
- *   sass\main.scss 166:20  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a     \2577 \a 166 \2502              color: $linear-gradient;\d\a     \2502                     ^^^^^^^^^^^^^^^^\a     \2575 \a   sass\\main.scss 166:20  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Shrikhand;
 }
+
+header .logo_header {
+  display: block;
+  width: 100%;
+  font-family: Shrikhand;
+  font-size: 40px;
+  text-align: center;
+}
+header .location {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+  box-shadow: inset 0 2px 10px 2px rgba(0, 0, 0, 0.2);
+  height: 4em;
+}
+header .location .fas {
+  padding: 0 10px 0 0;
+}
+header .location #search {
+  width: 30%;
+  background-color: #eaeaea;
+  border-style: none;
+}
+header .select {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 0 50px 0;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+header .select h1 {
+  width: 75%;
+}
+header .select h2 {
+  width: 75%;
+}
+header .select .exploration {
+  border-radius: 20px;
+  color: #FFF;
+  padding: 10px;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #434343;
+  color: #FFF;
+  padding: 20px;
+}
+footer .logo_footer {
+  display: block;
+  width: 100%;
+  font-family: Shrikhand;
+  font-size: 20px;
+}
+footer .container_footer {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 10px;
+}
+footer .container_footer .fas {
+  padding: 0 10px 0 0;
+}
+footer .container_footer .footer_choice {
+  width: 100%;
+}
+
+ol {
+  padding-inline-start: 10px;
+}
+ol li {
+  list-style: none;
+  padding: 0 0 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+a:visited {
+  color: none;
+}
+
+main {
+  margin: 20px;
+}
+main #restaurants {
+  margin: 0 0 60px 0;
+}
+main #restaurants .restaurants_images {
+  width: 100%;
+  height: 10rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px 20px 0 0;
+}
+main #restaurants .restaurants_images .new {
+  display: flex;
+  color: #008766;
+  background: #99E2D0;
+  font: message-box;
+  width: 30%;
+  border-radius: 5px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  top: 15px;
+  left: 12em;
+}
+main #restaurants .restaurant_palette_du_gout {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+main #restaurants .restaurant_note_enchantee {
+  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+main #restaurants .restaurant_a_la_francaise {
+  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+main #restaurants .restaurant_delice_des_sens {
+  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+main #restaurants .restaurant_map {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 0 20px 0;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f6f6f6;
+  transition: transform 0.2s;
+}
+main #restaurants .restaurant_map.restaurant_map:hover {
+  transform: scale(1.1);
+}
+
+.restaurant_info {
+  text-align-last: start;
+}
+.restaurant_info h4 {
+  text-shadow: 0 0 black;
+}
+
+.container_description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 0 20px 0 20px;
+  height: 5em;
+  width: 85%;
+}
+
+.select_list {
+  display: flex;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  height: 4em;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.select_list:hover {
+  background-color: #f5edff;
+}
+.select_list:hover > .fas {
+  color: #9356DC;
+}
+.select_list a {
+  color: black;
+  font: caption;
+}
+.select_list > .fas {
+  color: #7e7e7e;
+  width: 10%;
+  align-self: center;
+  text-align-last: center;
+}
+.select_list .number {
+  display: flex;
+  position: absolute;
+  background: #9356DC;
+  border-radius: 20px;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  left: 20px;
+  color: #FFF;
+}
+
+/*# sourceMappingURL=style.css.map */
