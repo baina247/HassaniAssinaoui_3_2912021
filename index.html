@@ -28,7 +28,7 @@
     </header>
     <main>
         <!--listes des choix-->
-        <section>
+        <section class="fonction">
             <h2>Fonctionnement</h2>
                 <div class="container_choice">
                     <div>
@@ -58,35 +58,51 @@
                 <h2 class="restaurant__titre">Restaurants</h2>
                 <article class="container_restaurants">
                     <div onclick="window.open('#')" class="restaurant_map">
-                        <div class="restaurant_palette_du_gout restaurants_images"></div>
-                        <div class="restaurant_info">
-                            <h4 >La palette du goût</h4>
-                            <p>Ménilmontant</p>
-                            <i class="far fa-heart restaurant__icone restaurant__icone--selected"></i>
-                        </div>
+                        <div class="restaurant_palette_du_gout restaurants_images"><span class="new">Nouveau</span></div>
+                        <div class=container_description>
+                            <div class="restaurant_info">
+                                <h4 >La palette du goût</h4>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div>
+                                <i class="far fa-heart fa-2x restaurant__icone restaurant__icone--selected"></i>
+                            </div>
+                        </div>    
                     </div>
                     <div onclick="window.open('#')" class="restaurant_map">
-                        <div class="restaurant_note_enchantee restaurants_images"></div>
+                        <div class="restaurant_note_enchantee restaurants_images"><span class="new">Nouveau</span></div>
+                        <div class="container_description">
                         <div class="restaurant_info">
                             <h4>La note enchantée</h4>
                             <p>Charonne</p>
-                            <i class="far fa-heart restaurant__icone restaurant__icone--selected"></i>
+                        </div>
+                        <div>
+                            <i class="far fa-heart fa-2x restaurant__icone restaurant__icone--selected"></i>
+                        </div>
                         </div>
                     </div>
                     <div onclick="window.open('#')" class="restaurant_map">
                         <div class="restaurant_a_la_francaise restaurants_images"></div>
-                        <div class="restaurant_info">
-                            <h4>A la française</h4>
-                            <p>Cité Rouge</p>
-                            <i class="far fa-heart restaurant__icone restaurant__icone--selected"></i>
+                        <div class="container_description">
+                            <div class="restaurant_info">
+                                <h4>A la française</h4>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <div>
+                                <i class="far fa-heart fa-2x restaurant__icone restaurant__icone--selected"></i>
+                            </div>
                         </div>
                     </div>
                     <div onclick="window.open('#')" class="restaurant_map">
                         <div class="restaurant_delice_des_sens restaurants_images"></div>
+                        <div class="container_description">
                         <div class="restaurant_info">
                             <h4>Le délice des sens</h4>
                             <p>Folie-Méricourt</p>
-                            <i class="far fa-heart restaurant__icone restaurant__icone--selected"></i>
+                        </div>
+                        <div>
+                            <i class="far fa-heart fa-2x restaurant__icone restaurant__icone--selected"></i>
+                        </div>
                         </div>
                     </div>
                 </article>

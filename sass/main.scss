@@ -47,9 +47,10 @@ header{
         }
         .exploration{
             border-radius: 20px;
-            border: 1px solid green;
+            color: #FFF;
             padding: 10px;
-            background-color: $colour-primary;
+            background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+            box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .2);;
         }
     }
 }
@@ -86,22 +87,42 @@ a{
         color: none;
     }
 }
+main{
+    margin: 20px;
+}
+#restaurants{
+    margin: 0 0 60px 0;
 
+}
+.restaurant_info{
+    text-align-last: start;
+    h4{
+        text-shadow: 0 0 black;
+    }
+}
+.container_description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0 20px 0 20px;
+    height: 5em;
+    width: 85%;
+}
 .restaurant_map
 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 20px; 
+    margin: 0 0 20px 0; 
     border-radius: 20px;
-    box-shadow: $box-shadow;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .2);
     background-color: rgb(246, 246, 246);
-    transition: transform .2s;   
-}
-
-.restaurant_map:hover
-{
-	transform: scale(1.1);
+    transition: transform .2s;
+    &.restaurant_map:hover{
+        transform: scale(1.1);
+    }   
 }
 
 .restaurants_images
@@ -112,6 +133,18 @@ a{
     background-position: center;
     margin-right: 20px;
     border-radius: 20px 20px 0 0;
+    .new{
+        display: flex;
+        color: rgb(0, 135, 102);
+        background: $colour-third;
+        font: message-box;
+        width: 30%;
+        border-radius: 5px;
+        justify-content: center;
+        padding: 10px;
+        position: relative;
+        top: 15px; left: 12em;
+    }
 }
 
 .restaurant_palette_du_gout{
