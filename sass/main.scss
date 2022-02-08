@@ -50,8 +50,8 @@ header{
             border-radius: 20px;
             color: #FFF;
             padding: 10px;
-            background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-            box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .2);;
+            background: $linear-gradient;
+            box-shadow: $box-shadow;
         }
     }
 }
@@ -97,6 +97,14 @@ main{
     margin: 20px;
     #restaurants{
         margin: 0 0 60px 0;
+        p{
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+        }
+        h4{
+            margin-block-start: 0px;
+            margin-block-end: 5px;
+        }
         .restaurants_images
         {
             width: 100%;
@@ -138,9 +146,9 @@ main{
             box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .2);
             background-color: rgb(246, 246, 246);
             transition: transform .2s;
-            &.restaurant_map:hover{
+            &:hover{
                 transform: scale(1.1);
-            }   
+            }
         }
     }
 }

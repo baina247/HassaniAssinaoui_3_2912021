@@ -97,6 +97,14 @@ main {
 main #restaurants {
   margin: 0 0 60px 0;
 }
+main #restaurants p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+main #restaurants h4 {
+  margin-block-start: 0px;
+  margin-block-end: 5px;
+}
 main #restaurants .restaurants_images {
   width: 100%;
   height: 10rem;
@@ -139,7 +147,7 @@ main #restaurants .restaurant_map {
   background-color: #f6f6f6;
   transition: transform 0.2s;
 }
-main #restaurants .restaurant_map.restaurant_map:hover {
+main #restaurants .restaurant_map:hover {
   transform: scale(1.1);
 }
 
