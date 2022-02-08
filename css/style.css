@@ -5,15 +5,15 @@ body {
   padding: 0;
   font-family: "Roboto", Shrikhand;
 }
-body #menu_1 .menu_1 {
+body .container_logo {
   display: flex;
   align-items: center;
   width: 100%;
 }
-body #menu_1 .menu_1 i {
+body .container_logo i {
   width: 20%;
 }
-body #menu_1 .menu_1 .logo_header {
+body .container_logo span {
   width: 70%;
 }
 
