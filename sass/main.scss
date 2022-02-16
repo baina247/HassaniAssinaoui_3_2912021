@@ -9,12 +9,13 @@ body{
     .container_logo{
         display: flex;
         align-items: center;
+        justify-content: center;
         width: 100%;
         i{
             width: 20%;
         }
         span{
-            width: 70%;
+            width: 60%;
         }
     }
 }
@@ -106,6 +107,11 @@ a{
 
 main{
     margin: 20px;
+    font-family: 'Roboto', Shrikhand;
+    .title{
+        display: flex;
+        align-items: center;
+    }
     #restaurants{
         margin: 0 0 60px 0;
         p{
@@ -217,4 +223,72 @@ main{
         left: 20px;
         color: #FFF;
     }
+}
+main{
+    margin: 0;
+    padding: 0;
+    h1{
+        display: block;
+        width: 100%;
+        font-family: Shrikhand;
+        font-size: 30px;
+    }
+    h4{
+        display: block;
+        width: 100%;
+        font-family: 'Roboto';
+        font-weight: 300px;
+        margin-block-start: 0em;
+        margin-block-end: 0em; 
+    }
+    .restaurant_a_la_francaise{
+        background-image: url('../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg') ;
+    }
+    p{
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    }
+    .restaurant_map{
+        .restaurant_a_la_francaise{
+            width: 100%;
+            height: 10rem;
+            background-size: cover;
+            background-position: center;
+            border-radius:  0 0 20px 20px;
+        }
+    }
+    .container_carte{
+        padding: 20px;
+        border: 1px solid;
+        border-radius: 20px 20px 0 0;
+        background-color: rgb(246, 246, 246);
+        .carte{
+            display: flex;
+            flex-direction: column;
+            .carte_info{
+                width: 100%;
+                height: 3em;
+                border-radius: 15px;
+                margin: 0 0 20px 0;
+                padding: 10px 0 0 0;
+                background-color: #FFF;
+                font-family: 'Roboto';
+                h4{
+                    padding: 0 0 0 5px;
+                }
+                .info{
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                    p{
+                        width: 85%;
+                    }
+                    span{
+                        width: 10%;
+                    }
+                }
+            }
+        }
+    }
+    
 }

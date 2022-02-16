@@ -8,13 +8,14 @@ body {
 body .container_logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
 }
 body .container_logo i {
   width: 20%;
 }
 body .container_logo span {
-  width: 70%;
+  width: 60%;
 }
 
 header .logo_header {
@@ -104,6 +105,11 @@ a:visited {
 
 main {
   margin: 20px;
+  font-family: "Roboto", Shrikhand;
+}
+main .title {
+  display: flex;
+  align-items: center;
 }
 main #restaurants {
   margin: 0 0 60px 0;
@@ -215,6 +221,72 @@ main #restaurants .restaurant_map:hover {
   align-items: center;
   left: 20px;
   color: #FFF;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+main h1 {
+  display: block;
+  width: 100%;
+  font-family: Shrikhand;
+  font-size: 30px;
+}
+main h4 {
+  display: block;
+  width: 100%;
+  font-family: "Roboto";
+  font-weight: 300px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+main .restaurant_a_la_francaise {
+  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+main p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+main .restaurant_map .restaurant_a_la_francaise {
+  width: 100%;
+  height: 10rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 20px 20px;
+}
+main .container_carte {
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 20px 20px 0 0;
+  background-color: #f6f6f6;
+}
+main .container_carte .carte {
+  display: flex;
+  flex-direction: column;
+}
+main .container_carte .carte .carte_info {
+  width: 100%;
+  height: 3em;
+  border-radius: 15px;
+  margin: 0 0 20px 0;
+  padding: 10px 0 0 0;
+  background-color: #FFF;
+  font-family: "Roboto";
+}
+main .container_carte .carte .carte_info h4 {
+  padding: 0 0 0 5px;
+}
+main .container_carte .carte .carte_info .info {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+main .container_carte .carte .carte_info .info p {
+  width: 85%;
+}
+main .container_carte .carte .carte_info .info span {
+  width: 10%;
 }
 
 /*# sourceMappingURL=style.css.map */
