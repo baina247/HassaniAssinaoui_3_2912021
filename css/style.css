@@ -223,17 +223,17 @@ main #restaurants .restaurant_map:hover {
   color: #FFF;
 }
 
-main {
+#main_menu {
   margin: 0;
   padding: 0;
 }
-main h1 {
+#main_menu h1 {
   display: block;
   width: 100%;
   font-family: Shrikhand;
   font-size: 30px;
 }
-main h4 {
+#main_menu h4 {
   display: block;
   width: 100%;
   font-family: "Roboto";
@@ -241,31 +241,41 @@ main h4 {
   margin-block-start: 0em;
   margin-block-end: 0em;
 }
-main .restaurant_a_la_francaise {
+#main_menu .restaurant_palette_du_gout {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+#main_menu .restaurant_note_enchantee {
+  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+#main_menu .restaurant_a_la_francaise {
   background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
-main p {
+#main_menu .restaurant_delice_des_sens {
+  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+#main_menu p {
   margin-block-start: 0em;
   margin-block-end: 0em;
+  font-size: 15px;
 }
-main .restaurant_map .restaurant_a_la_francaise {
+#main_menu .restaurant_map .restaurants_menu {
   width: 100%;
-  height: 10rem;
+  height: 15rem;
   background-size: cover;
   background-position: center;
-  border-radius: 0 0 20px 20px;
 }
-main .container_carte {
+#main_menu .container_carte {
   padding: 20px;
-  border: 1px solid;
   border-radius: 20px 20px 0 0;
   background-color: #f6f6f6;
+  position: relative;
+  top: -1em;
 }
-main .container_carte .carte {
+#main_menu .container_carte .carte {
   display: flex;
   flex-direction: column;
 }
-main .container_carte .carte .carte_info {
+#main_menu .container_carte .carte .carte_info {
   width: 100%;
   height: 3em;
   border-radius: 15px;
@@ -274,19 +284,34 @@ main .container_carte .carte .carte_info {
   background-color: #FFF;
   font-family: "Roboto";
 }
-main .container_carte .carte .carte_info h4 {
+#main_menu .container_carte .carte .carte_info h4 {
   padding: 0 0 0 5px;
 }
-main .container_carte .carte .carte_info .info {
+#main_menu .container_carte .carte .carte_info .info {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-main .container_carte .carte .carte_info .info p {
+#main_menu .container_carte .carte .carte_info .info p {
   width: 85%;
 }
-main .container_carte .carte .carte_info .info span {
+#main_menu .container_carte .carte .carte_info .info span {
   width: 10%;
+}
+#main_menu .order {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 30px 0 30px 0;
+}
+#main_menu .order .exploration {
+  text-align: center;
+  border-radius: 20px;
+  color: #FFF;
+  padding: 10px;
+  width: 40%;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */
