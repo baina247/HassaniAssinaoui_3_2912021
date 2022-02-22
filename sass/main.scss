@@ -92,10 +92,10 @@ footer{
 }
 ol{
     -webkit-padding-start: 10px;
-            padding-inline-start: 10px;
+    padding-inline-start: 10px;
     li{
-    list-style: none;
-    padding: 0 0 20px 0;
+        list-style: none;
+        padding: 0 0 20px 0;
     }
 }
 a{
@@ -117,15 +117,15 @@ main{
         margin: 0 0 60px 0;
         p{
             -webkit-margin-before: 0px;
-                    margin-block-start: 0px;
+            margin-block-start: 0px;
             -webkit-margin-after: 0px;
-                    margin-block-end: 0px;
+            margin-block-end: 0px;
         }
         h4{
             -webkit-margin-before: 0px;
-                    margin-block-start: 0px;
+            margin-block-start: 0px;
             -webkit-margin-after: 5px;
-                    margin-block-end: 5px;
+            margin-block-end: 5px;
         }
         .restaurants_images
         {
@@ -210,22 +210,11 @@ main{
             background-position: 0% 50%;
         }
     }
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
 }
 
 .restaurant_info{
     -moz-text-align-last: start;
-         text-align-last: start;
+    text-align-last: start;
     h4{
         text-shadow: 0 0 black;
     }
@@ -263,8 +252,8 @@ main{
         width: 10%;
         align-self: center;
         -moz-text-align-last: center;
-             text-align-last: center;
-
+        text-align-last: center;
+        
     }
     .number{
         display: flex;
@@ -289,10 +278,10 @@ main{
         font-size: 25px;
     }
     h2{
-    display: inline-block;
-    border-bottom: 3px solid $colour-third;
-    padding-bottom: 2px;
-    width: 18%;
+        display: inline-block;
+        border-bottom: 3px solid $colour-third;
+        padding-bottom: 2px;
+        width: 18%;
     }
     h4{
         display: block;
@@ -300,9 +289,9 @@ main{
         font-family: 'Roboto';
         font-weight: bolder;
         -webkit-margin-before: 0em;
-                margin-block-start: 0em;
+        margin-block-start: 0em;
         -webkit-margin-after: 0em;
-                margin-block-end: 0em;
+        margin-block-end: 0em;
     }
     .restaurant_palette_du_gout{
         background-image: url('../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg') ;
@@ -318,9 +307,9 @@ main{
     }
     p{
         -webkit-margin-before: 0em;
-                margin-block-start: 0em;
+        margin-block-start: 0em;
         -webkit-margin-after: 0em;
-                margin-block-end: 0em;
+        margin-block-end: 0em;
         font-size: 15px;
     }
     .restaurant_map{
@@ -383,5 +372,5 @@ main{
             box-shadow: $box-shadow;
         }
     }
-      
+    
 }
