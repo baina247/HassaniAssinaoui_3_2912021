@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">    
     <title>OhMyFood</title>
 </head>
-<body id="main">
+<body>
     <header>
         <span class="logo_header">ohmyfood</span>
         <!--barre de recherche-->
@@ -26,7 +26,7 @@
             <span class="exploration">Explorer nos restaurants</span>
         </div>
     </header>
-    <main>
+    <main id="acceuil">
         <!--listes des choix-->
         <section class="fonction">
             <h2>Fonctionnement</h2>
@@ -58,7 +58,7 @@
                 <h2 class="restaurant__titre">Restaurants</h2>
                 <article class="container_restaurants">
                     <div class="restaurant_map">
-                        <div class="restaurant_palette_du_gout restaurants_images"><span class="new">Nouveau</span></div>
+                        <div onclick="window.location=('menu_3.html')" class="restaurant_palette_du_gout restaurants_images"><span class="new">Nouveau</span></div>
                         <div class=container_description>
                             <div class="restaurant_info">
                                 <h4 >La palette du goût</h4>
@@ -71,7 +71,7 @@
                         </div>    
                     </div>
                     <div class="restaurant_map">
-                        <div class="restaurant_note_enchantee restaurants_images"><span class="new">Nouveau</span></div>
+                        <div onclick="window.location=('menu_2.html')" class="restaurant_note_enchantee restaurants_images"><span class="new">Nouveau</span></div>
                         <div class="container_description">
                         <div class="restaurant_info">
                             <h4>La note enchantée</h4>
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="restaurant_map">
-                        <div class="restaurant_a_la_francaise restaurants_images"></div>
+                        <div onclick="window.location=('menu_1.html')" class="restaurant_a_la_francaise restaurants_images"></div>
                         <div class="container_description">
                             <div class="restaurant_info">
                                 <h4>A la française</h4>
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                     <div class="restaurant_map">
-                        <div class="restaurant_delice_des_sens restaurants_images"></div>
+                        <div onclick="window.location=('menu_4.html')" class="restaurant_delice_des_sens restaurants_images"></div>
                         <div class="container_description">
                         <div class="restaurant_info">
                             <h4>Le délice des sens</h4>
