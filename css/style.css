@@ -231,7 +231,7 @@ main #restaurants .restaurant_map:hover {
   display: block;
   width: 100%;
   font-family: Shrikhand;
-  font-size: 30px;
+  font-size: 25px;
 }
 #main_menu h2 {
   display: inline-block;
