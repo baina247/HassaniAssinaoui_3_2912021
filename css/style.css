@@ -88,6 +88,7 @@ footer .container_footer .footer_choice {
 }
 
 ol {
+  -webkit-padding-start: 10px;
   padding-inline-start: 10px;
 }
 ol li {
@@ -115,11 +116,15 @@ main #restaurants {
   margin: 0 0 60px 0;
 }
 main #restaurants p {
+  -webkit-margin-before: 0px;
   margin-block-start: 0px;
+  -webkit-margin-after: 0px;
   margin-block-end: 0px;
 }
 main #restaurants h4 {
+  -webkit-margin-before: 0px;
   margin-block-start: 0px;
+  -webkit-margin-after: 5px;
   margin-block-end: 5px;
 }
 main #restaurants .restaurants_images {
@@ -185,6 +190,17 @@ main .favorite i.fas {
   transition: transform 0.2s;
   cursor: pointer;
 }
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -198,6 +214,7 @@ main .favorite i.fas {
 }
 
 .restaurant_info {
+  -moz-text-align-last: start;
   text-align-last: start;
 }
 .restaurant_info h4 {
@@ -237,6 +254,7 @@ main .favorite i.fas {
   color: #7e7e7e;
   width: 10%;
   align-self: center;
+  -moz-text-align-last: center;
   text-align-last: center;
 }
 .select_list .number {
@@ -273,7 +291,9 @@ main .favorite i.fas {
   width: 100%;
   font-family: "Roboto";
   font-weight: bolder;
+  -webkit-margin-before: 0em;
   margin-block-start: 0em;
+  -webkit-margin-after: 0em;
   margin-block-end: 0em;
 }
 #main_menu .restaurant_palette_du_gout {
@@ -289,7 +309,9 @@ main .favorite i.fas {
   background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 #main_menu p {
+  -webkit-margin-before: 0em;
   margin-block-start: 0em;
+  -webkit-margin-after: 0em;
   margin-block-end: 0em;
   font-size: 15px;
 }
