@@ -26,7 +26,8 @@ body .loader_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gray;
+  background-color: darkgray;
+  opacity: 99%;
   z-index: 999;
   display: none;
 }
