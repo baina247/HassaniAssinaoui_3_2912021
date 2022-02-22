@@ -167,6 +167,35 @@ main #restaurants .restaurant_map {
 main #restaurants .restaurant_map:hover {
   transform: scale(1.1);
 }
+main .fa-2x {
+  font-size: 1.3em;
+}
+main .favorite:hover i.far {
+  display: none;
+}
+main .favorite:hover i.fas {
+  color: #9356DC;
+  display: block;
+  background: linear-gradient(222deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .favorite i.fas {
+  display: none;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 .restaurant_info {
   text-align-last: start;
@@ -303,6 +332,9 @@ main #restaurants .restaurant_map:hover {
 }
 #main_menu .container_carte .carte .carte_info .info span {
   width: 10%;
+}
+#main_menu .check {
+  width: 20%;
 }
 #main_menu .order {
   display: flex;
