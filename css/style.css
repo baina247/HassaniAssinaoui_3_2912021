@@ -8,14 +8,18 @@ body {
 body .container_logo {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
+  margin: 5px;
 }
 body .container_logo i {
   width: 20%;
+  padding: 0 0 0 20px;
+  font-size: 1em;
 }
 body .container_logo span {
   width: 60%;
+  font-size: 2em;
 }
 body .loader_container {
   width: 100%;
@@ -26,10 +30,11 @@ body .loader_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: darkgray;
-  opacity: 99%;
-  z-index: 999;
-  display: none;
+  background-color: black;
+  opacity: 85%;
+  z-index: 100;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
 }
 body .loader {
   border: 16px solid #bb50d6;
@@ -39,8 +44,8 @@ body .loader {
   border-left: 16px solid #99E2D0;
   width: 6em;
   height: 6em;
-  -webkit-animation: spin 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
-  animation: spin 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+  -webkit-animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) 150ms;
+  animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) 150ms;
 }
 @-webkit-keyframes spin {
   0% {
@@ -64,6 +69,29 @@ body .loader {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+body .carte_info {
+  -webkit-animation: carte_info 1000ms 150ms;
+  animation: carte_info 1000ms 150ms;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+@-webkit-keyframes carte_info {
+  0% {
+    transform: translateY(10em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes carte_info {
+  from {
+    margin-bottom: 100%;
+    transform: translateY(30em);
+  }
+  to {
+    transform: translateY(0);
   }
 }
 
@@ -310,8 +338,8 @@ main .favorite i.fas {
 }
 #main_menu h2 {
   display: inline-block;
-  border-bottom: 3px solid #99E2D0;
-  padding-bottom: 2px;
+  border-bottom: 5px solid #99E2D0;
+  padding-bottom: 5px;
   width: 18%;
 }
 #main_menu h4 {
@@ -354,7 +382,7 @@ main .favorite i.fas {
   border-radius: 20px 20px 0 0;
   background-color: #f6f6f6;
   position: relative;
-  top: -1em;
+  margin: -1em 0 0 0;
 }
 #main_menu .container_carte .carte {
   display: flex;
@@ -382,10 +410,6 @@ main .favorite i.fas {
 }
 #main_menu .container_carte .carte .carte_info .info span {
   width: 10%;
-}
-#main_menu .check {
-  width: 20%;
-  overflow: hidden;
 }
 #main_menu .order {
   display: flex;
