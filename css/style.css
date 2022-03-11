@@ -33,8 +33,6 @@ body .loader_container {
   background-color: black;
   opacity: 85%;
   z-index: 100;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
 }
 body .loader {
   border: 16px solid #bb50d6;
@@ -66,20 +64,20 @@ body .loader {
 @keyframes spin {
   0% {
     transform: rotate(0deg);
+    opacity: 100%;
   }
   100% {
     transform: rotate(360deg);
+    opacity: 0%;
   }
 }
 body .carte_info {
   -webkit-animation: carte_info 1000ms 150ms;
   animation: carte_info 1000ms 150ms;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
 }
 @-webkit-keyframes carte_info {
   0% {
-    transform: translateY(10em);
+    transform: translateY(1em);
   }
   100% {
     transform: translateY(0);
@@ -87,8 +85,7 @@ body .carte_info {
 }
 @keyframes carte_info {
   from {
-    margin-bottom: 100%;
-    transform: translateY(30em);
+    transform: translateY(1em);
   }
   to {
     transform: translateY(0);
