@@ -34,6 +34,7 @@ body{
         background-color: black;
         opacity: 85%;
         z-index: 100;
+        display: none;
 
     }
     .loader {
@@ -69,6 +70,14 @@ body{
             opacity: 0%;
         }
     }
+    @keyframes body {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
     .carte_info{
         -webkit-animation: carte_info 1000ms 150ms;
         animation: carte_info 1000ms 150ms;
@@ -90,6 +99,7 @@ body{
             transform: translateY(0);
         }
     }
+    
 }
 
 header{
@@ -137,6 +147,34 @@ header{
             background: $linear-gradient;
             box-shadow: $box-shadow;
         }
+    }
+    @media (max-width: 768px){
+        .location #search {
+            width: 15%;
+        }
+        .select{
+            h2 {
+                width: 90%;
+            }
+            h1 {
+                width: 65%;
+            }
+        } 
+    }
+    @media (max-width: 1024px){
+        .location #search {
+            width: 11%;
+        }
+        .select{
+            h2 {
+                width: 100%;
+                margin-inline-start: 8em;
+            }
+            h1 {
+                width: 100%;
+                margin-inline-start: 8em;
+            }
+        } 
     }
 }
 
@@ -272,6 +310,53 @@ main{
             }
         }
     }
+    @media (max-width: 425px) {
+        #restaurants{
+            .restaurants_images{
+                .new {
+                    left: 15em;
+                }
+            }
+        } 
+        
+    }
+    @media (max-width: 768px) { 
+        #restaurants{
+            .restaurants_images{
+                height: 15rem;
+                .new {
+                    left: 30em;
+                }
+            }
+            .container_description {
+                width: 90%;
+            }
+        } 
+    }
+    @media (max-width: 1024px) { 
+        #restaurants{
+            .container_restaurants{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .restaurant_map{
+                    width: 49%;
+                    .restaurants_images{
+                        height: 15rem;
+                        .new {
+                            left: 19em;
+                        }
+                    }
+                }
+                .container_description {
+                width: 90%;
+                }   
+            }
+            
+        } 
+    }
+   
+    
 }
 
 .restaurant_info{
@@ -328,6 +413,18 @@ main{
         align-items: center;
         left: 20px;
         color: #FFF;
+    }
+    @media (max-width: 768px) { 
+            justify-content: space-between;
+        .option{
+            width: 30%;
+        }
+    }
+    @media (max-width: 1024px){
+        justify-content: space-between;
+        .option{
+            width: 20%;
+        } 
     }
 }
 #main_menu{

@@ -33,6 +33,7 @@ body .loader_container {
   background-color: black;
   opacity: 85%;
   z-index: 100;
+  display: none;
 }
 body .loader {
   border: 16px solid #bb50d6;
@@ -69,6 +70,14 @@ body .loader {
   100% {
     transform: rotate(360deg);
     opacity: 0%;
+  }
+}
+@keyframes body {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 body .carte_info {
@@ -136,6 +145,30 @@ header .select .exploration {
   padding: 10px;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  header .location #search {
+    width: 15%;
+  }
+  header .select h2 {
+    width: 90%;
+  }
+  header .select h1 {
+    width: 65%;
+  }
+}
+@media (max-width: 1024px) {
+  header .location #search {
+    width: 11%;
+  }
+  header .select h2 {
+    width: 100%;
+    margin-inline-start: 8em;
+  }
+  header .select h1 {
+    width: 100%;
+    margin-inline-start: 8em;
+  }
 }
 
 footer {
@@ -265,6 +298,41 @@ main .favorite i.fas {
   transition: transform 0.2s;
   cursor: pointer;
 }
+@media (max-width: 425px) {
+  main #restaurants .restaurants_images .new {
+    left: 15em;
+  }
+}
+@media (max-width: 768px) {
+  main #restaurants .restaurants_images {
+    height: 15rem;
+  }
+  main #restaurants .restaurants_images .new {
+    left: 30em;
+  }
+  main #restaurants .container_description {
+    width: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  main #restaurants .container_restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main #restaurants .container_restaurants .restaurant_map {
+    width: 49%;
+  }
+  main #restaurants .container_restaurants .restaurant_map .restaurants_images {
+    height: 15rem;
+  }
+  main #restaurants .container_restaurants .restaurant_map .restaurants_images .new {
+    left: 19em;
+  }
+  main #restaurants .container_restaurants .container_description {
+    width: 90%;
+  }
+}
 
 .restaurant_info {
   -moz-text-align-last: start;
@@ -321,6 +389,22 @@ main .favorite i.fas {
   align-items: center;
   left: 20px;
   color: #FFF;
+}
+@media (max-width: 768px) {
+  .select_list {
+    justify-content: space-between;
+  }
+  .select_list .option {
+    width: 30%;
+  }
+}
+@media (max-width: 1024px) {
+  .select_list {
+    justify-content: space-between;
+  }
+  .select_list .option {
+    width: 20%;
+  }
 }
 
 #main_menu {
