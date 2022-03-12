@@ -176,6 +176,21 @@ header{
             }
         } 
     }
+    @media (max-width: 1440px){
+        .location #search {
+            width: 10%;
+        }
+        .select{
+            h2 {
+                width: 100%;
+                margin-inline-start: 16em;
+            }
+            h1 {
+                width: 100%;
+                margin-inline-start: 15em;
+            }
+        } 
+    }
 }
 
 footer{
@@ -355,7 +370,28 @@ main{
             
         } 
     }
-   
+    @media (max-width: 1440px) { 
+        #restaurants{
+            .container_restaurants{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .restaurant_map{
+                    width: 49%;
+                    .restaurants_images{
+                        height: 15rem;
+                        .new {
+                            left: 28em;
+                        }
+                    }
+                }
+                .container_description {
+                width: 90%;
+                }   
+            }
+            
+        } 
+    }
     
 }
 
@@ -424,6 +460,12 @@ main{
         justify-content: space-between;
         .option{
             width: 20%;
+        } 
+    }
+    @media (max-width: 1440px){
+        justify-content: space-between;
+        .option{
+            width: 15%;
         } 
     }
 }

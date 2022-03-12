@@ -170,6 +170,19 @@ header .select .exploration {
     margin-inline-start: 8em;
   }
 }
+@media (max-width: 1440px) {
+  header .location #search {
+    width: 10%;
+  }
+  header .select h2 {
+    width: 100%;
+    margin-inline-start: 16em;
+  }
+  header .select h1 {
+    width: 100%;
+    margin-inline-start: 15em;
+  }
+}
 
 footer {
   background-color: #434343;
@@ -333,6 +346,25 @@ main .favorite i.fas {
     width: 90%;
   }
 }
+@media (max-width: 1440px) {
+  main #restaurants .container_restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main #restaurants .container_restaurants .restaurant_map {
+    width: 49%;
+  }
+  main #restaurants .container_restaurants .restaurant_map .restaurants_images {
+    height: 15rem;
+  }
+  main #restaurants .container_restaurants .restaurant_map .restaurants_images .new {
+    left: 28em;
+  }
+  main #restaurants .container_restaurants .container_description {
+    width: 90%;
+  }
+}
 
 .restaurant_info {
   -moz-text-align-last: start;
@@ -404,6 +436,14 @@ main .favorite i.fas {
   }
   .select_list .option {
     width: 20%;
+  }
+}
+@media (max-width: 1440px) {
+  .select_list {
+    justify-content: space-between;
+  }
+  .select_list .option {
+    width: 15%;
   }
 }
 
