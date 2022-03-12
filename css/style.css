@@ -72,6 +72,14 @@ body .loader {
     opacity: 0%;
   }
 }
+@-webkit-keyframes body {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 @keyframes body {
   0% {
     transform: translateX(0);
@@ -163,10 +171,12 @@ header .select .exploration {
   }
   header .select h2 {
     width: 100%;
+    -webkit-margin-start: 8em;
     margin-inline-start: 8em;
   }
   header .select h1 {
     width: 100%;
+    -webkit-margin-start: 8em;
     margin-inline-start: 8em;
   }
 }
@@ -176,10 +186,12 @@ header .select .exploration {
   }
   header .select h2 {
     width: 100%;
+    -webkit-margin-start: 16em;
     margin-inline-start: 16em;
   }
   header .select h1 {
     width: 100%;
+    -webkit-margin-start: 15em;
     margin-inline-start: 15em;
   }
 }

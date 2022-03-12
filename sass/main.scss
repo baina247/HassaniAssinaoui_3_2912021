@@ -35,7 +35,7 @@ body{
         opacity: 85%;
         z-index: 100;
         display: none;
-
+        
     }
     .loader {
         border: 16px solid #bb50d6;
@@ -64,10 +64,18 @@ body{
             transform: rotate(0deg);
             opacity: 100%;
         }
-
+        
         100% { 
             transform: rotate(360deg);
             opacity: 0%;
+        }
+    }
+    @-webkit-keyframes body {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(0);
         }
     }
     @keyframes body {
@@ -81,7 +89,7 @@ body{
     .carte_info{
         -webkit-animation: carte_info 1000ms 150ms;
         animation: carte_info 1000ms 150ms;
-
+        
     }
     @-webkit-keyframes carte_info {
         0% {
@@ -168,11 +176,13 @@ header{
         .select{
             h2 {
                 width: 100%;
-                margin-inline-start: 8em;
+                -webkit-margin-start: 8em;
+                        margin-inline-start: 8em;
             }
             h1 {
                 width: 100%;
-                margin-inline-start: 8em;
+                -webkit-margin-start: 8em;
+                        margin-inline-start: 8em;
             }
         } 
     }
@@ -183,11 +193,13 @@ header{
         .select{
             h2 {
                 width: 100%;
-                margin-inline-start: 16em;
+                -webkit-margin-start: 16em;
+                        margin-inline-start: 16em;
             }
             h1 {
                 width: 100%;
-                margin-inline-start: 15em;
+                -webkit-margin-start: 15em;
+                        margin-inline-start: 15em;
             }
         } 
     }
@@ -364,7 +376,7 @@ main{
                     }
                 }
                 .container_description {
-                width: 90%;
+                    width: 90%;
                 }   
             }
             
@@ -386,7 +398,7 @@ main{
                     }
                 }
                 .container_description {
-                width: 90%;
+                    width: 90%;
                 }   
             }
             
@@ -451,7 +463,7 @@ main{
         color: #FFF;
     }
     @media (max-width: 768px) { 
-            justify-content: space-between;
+        justify-content: space-between;
         .option{
             width: 30%;
         }
