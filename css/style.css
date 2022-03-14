@@ -37,6 +37,24 @@ body .container_logo span {
   font-size: 2em;
   font-style: normal;
 }
+body .loader_container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(108, 105, 110, 0.9);
+  -webkit-animation: loader 0.01s;
+  animation: loader 0.01s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 body .loader {
   border: 16px solid #bb50d6;
   border-radius: 50%;
@@ -45,9 +63,8 @@ body .loader {
   border-left: 16px solid #99E2D0;
   width: 6em;
   height: 6em;
-  -webkit-animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) 150ms;
-  animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) 150ms;
-  animation-duration: 1s;
+  -webkit-animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) infinite;
+  animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) infinite;
 }
 @-webkit-keyframes spin {
   0% {
@@ -503,19 +520,25 @@ main .favorite i.fas {
   margin: 0 0 20px 0;
   padding: 10px 0 0 0;
   cursor: pointer;
+  -webkit-animation: itemShow 0.6s;
   animation: itemShow 0.6s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   transform: scale(0);
   max-width: 100%;
 }
 #main_menu .container_carte .carte .carte_info.delay-0 {
+  -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
 #main_menu .container_carte .carte .carte_info.delay-1 {
+  -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
 #main_menu .container_carte .carte .carte_info.delay-2 {
+  -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 #main_menu .container_carte .carte .carte_info h4 {

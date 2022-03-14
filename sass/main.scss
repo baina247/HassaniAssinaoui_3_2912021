@@ -25,6 +25,24 @@ body{
             font-style: normal;
         }
     }
+    .loader_container{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(108, 105, 110, 0.9);
+        -webkit-animation: loader 0.01s;
+                animation: loader 0.01s;
+        -webkit-animation-delay: 2s;
+                animation-delay: 2s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        z-index: 10000;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
     .loader {
         border: 16px solid #bb50d6;
         border-radius: 50%;
@@ -33,9 +51,8 @@ body{
         border-left: 16px solid #99E2D0;
         width: 6em;
         height: 6em;
-        -webkit-animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) 150ms;
-        animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) 150ms;
-        animation-duration: 1s;
+        -webkit-animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) infinite;
+        animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) infinite;
     }
     
     @-webkit-keyframes spin {
@@ -151,11 +168,11 @@ header{
         } 
         .select{
             h1{
-
+                
                 padding: 30px 20px 0 20px;
             }
             h2{
-
+                
                 padding: 0 20px 20px 20px;
                 font-size: large;
             }
@@ -534,19 +551,25 @@ main{
                 margin: 0 0 20px 0;
                 padding: 10px 0 0 0;
                 cursor: pointer;
-                animation: itemShow .6s;
-                animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-                animation-fill-mode: both;
+                -webkit-animation: itemShow .6s;
+                        animation: itemShow .6s;
+                -webkit-animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+                        animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+                -webkit-animation-fill-mode: both;
+                        animation-fill-mode: both;
                 transform: scale(0);
                 max-width: 100%;
                 &.delay-0{
-                    animation-delay: 0s;
+                    -webkit-animation-delay: 0s;
+                            animation-delay: 0s;
                 }
                 &.delay-1{
-                    animation-delay: .1s;
+                    -webkit-animation-delay: .1s;
+                            animation-delay: .1s;
                 }
                 &.delay-2{
-                    animation-delay: .2s;
+                    -webkit-animation-delay: .2s;
+                            animation-delay: .2s;
                 }
                 h4{
                     padding: 0 0 0 5px;
