@@ -6,6 +6,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', Shrikhand;
+    font: message-box;
     .container_logo{
         display: flex;
         align-items: center;
@@ -20,6 +21,7 @@ body{
         span{
             width: 60%;
             font-size: 2em;
+            font-style: normal;
         }
     }
     .loader_container{
@@ -133,6 +135,8 @@ header{
             width: 30%;
             background-color: #eaeaea;
             border-style: none;
+            font: message-box;
+            font-weight: bold;
         }
     }
     .select{
@@ -149,104 +153,71 @@ header{
             width: 75%;
         }
         .exploration{
-            border-radius: 20px;
+            border-radius: 30px;
             color: #FFF;
-            padding: 10px;
+            padding: 20px 30px 20px 30px;
             background: $linear-gradient;
             box-shadow: $box-shadow;
+            font: message-box;
         }
     }
     @media (max-width: 1440px){
         .location{
             #search {
                 width: 10%;
+                text-align: center;
             }
         } 
         .select{
             h2 {
                 width: 100%;
-                -webkit-margin-start: 16em;
-                margin-inline-start: 16em;
+                text-align: center;
+                font-weight: 500;
             }
             h1 {
                 width: 100%;
-                -webkit-margin-start: 15em;
-                margin-inline-start: 15em;
+                text-align: center;
             }
         } 
     }
     @media (max-width: 1024px){
         .location{
             #search {
-                width: 11%;
-            }
-        } 
-        .select{
-            h2 {
-                width: 100%;
-                -webkit-margin-start: 8em;
-                margin-inline-start: 8em;
-            }
-            h1 {
-                width: 100%;
-                -webkit-margin-start: 8em;
-                margin-inline-start: 8em;
+                width: 15%;
             }
         } 
     }
     @media (max-width: 768px){
         .location{
             #search {
-                width: 15%;
-            }
-        } 
-        .select{
-            h2 {
-                margin-inline-start: 2em;
-            }
-            h1 {
-                margin-inline-start: 4em;
+                width: 20%;
             }
         } 
     }
     @media (max-width: 425px){
         .location{
             #search {
-                width: 30%;
+                width: 35%;
             }
         } 
         .select{
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            padding: 0 0 50px 0;
-            justify-content: center;
             h1{
-                width: 75%;
-                margin-inline-start: 1em;
+
+                padding: 30px 20px 0 20px;
             }
             h2{
-                width: 75%;
-                margin-inline-start: 1em;
+
+                padding: 0 20px 20px 20px;
+                font-size: large;
             }
         } 
     }
     @media (max-width: 375px){
         .location{
             #search {
-                width: 30%;
+                width: 40%;
             }
-        } 
-        .select{
-            h2 {
-                width: 100%;
-                margin-inline-start: 2em;
-            }
-            h1 {
-                width: 100%;
-                margin-inline-start: 2em;
-            }
-        } 
+        }
     }
 }
 
@@ -291,12 +262,14 @@ a{
 main{
     margin: 20px;
     font-family: 'Roboto', Shrikhand;
+    font: message-box;
     .title{
         display: flex;
         align-items: center;
     }
     #restaurants{
         margin: 0 0 60px 0;
+        
         p{
             -webkit-margin-before: 0px;
             margin-block-start: 0px;
@@ -495,7 +468,7 @@ main{
     }
     a{
         color: black;
-        font: caption;
+        font: message-box;
     }
     >.fas{
         color: rgb(126, 126, 126);
@@ -524,15 +497,24 @@ main{
         } 
     }
     @media (max-width: 1024px){
-        justify-content: space-between;
         .option{
             width: 20%;
         } 
     }
     @media (max-width: 768px) { 
-        justify-content: space-between;
         .option{
             width: 30%;
+        }
+    }
+    @media (max-width: 425px) {
+        justify-content: space-around; 
+        .option{
+            width: 50%;
+        }
+    }
+    @media (max-width: 375px) { 
+        .option{
+            width: 60%;
         }
     }
 }
