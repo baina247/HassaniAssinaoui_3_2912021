@@ -1,0 +1,15 @@
+@keyframes itemShow {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes loader {
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+  } 

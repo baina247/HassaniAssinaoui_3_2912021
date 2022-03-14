@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import "./utils/animation";
 @import "./utils/variables";
 @import "./utils/mixins";
 body{
@@ -24,21 +25,6 @@ body{
             font-style: normal;
         }
     }
-    .loader_container{
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        opacity: 85%;
-        z-index: 100;
-        display: none;
-        
-    }
     .loader {
         border: 16px solid #bb50d6;
         border-radius: 50%;
@@ -49,6 +35,7 @@ body{
         height: 6em;
         -webkit-animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) 150ms;
         animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) 150ms;
+        animation-duration: 1s;
     }
     
     @-webkit-keyframes spin {
@@ -71,45 +58,7 @@ body{
             transform: rotate(360deg);
             opacity: 0%;
         }
-    }
-    @-webkit-keyframes body {
-        0%{
-            transform: translateX(0);
-        }
-        100%{
-            transform: translateX(0);
-        }
-    }
-    @keyframes body {
-        0%{
-            transform: translateX(0);
-        }
-        100%{
-            transform: translateX(0);
-        }
-    }
-    .carte_info{
-        -webkit-animation: carte_info 1000ms 150ms;
-        animation: carte_info 1000ms 150ms;
-        
-    }
-    @-webkit-keyframes carte_info {
-        0% {
-            transform: translateY(1em);
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
-    @keyframes carte_info {
-        from{
-            transform: translateY(1em);
-        }
-        to{
-            transform: translateY(0);
-        }
-    }
-    
+    }    
 }
 
 header{
@@ -580,15 +529,28 @@ main{
             display: flex;
             flex-direction: column;
             .carte_info{
-                width: 100%;
-                height: 3em;
+                max-width: 100%;
                 border-radius: 15px;
                 margin: 0 0 20px 0;
                 padding: 10px 0 0 0;
-                background-color: #FFF;
-                font-family: 'Roboto';
+                cursor: pointer;
+                animation: itemShow .6s;
+                animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+                animation-fill-mode: both;
+                transform: scale(0);
+                max-width: 100%;
+                &.delay-0{
+                    animation-delay: 0s;
+                }
+                &.delay-1{
+                    animation-delay: .1s;
+                }
+                &.delay-2{
+                    animation-delay: .2s;
+                }
                 h4{
                     padding: 0 0 0 5px;
+                    font: message-box;
                 }
                 .info{
                     display: flex;
