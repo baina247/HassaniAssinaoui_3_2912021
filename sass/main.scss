@@ -156,50 +156,95 @@ header{
             box-shadow: $box-shadow;
         }
     }
-    @media (max-width: 768px){
-        .location #search {
-            width: 15%;
-        }
-        .select{
-            h2 {
-                width: 90%;
-            }
-            h1 {
-                width: 65%;
-            }
-        } 
-    }
-    @media (max-width: 1024px){
-        .location #search {
-            width: 11%;
-        }
-        .select{
-            h2 {
-                width: 100%;
-                -webkit-margin-start: 8em;
-                        margin-inline-start: 8em;
-            }
-            h1 {
-                width: 100%;
-                -webkit-margin-start: 8em;
-                        margin-inline-start: 8em;
-            }
-        } 
-    }
     @media (max-width: 1440px){
-        .location #search {
-            width: 10%;
-        }
+        .location{
+            #search {
+                width: 10%;
+            }
+        } 
         .select{
             h2 {
                 width: 100%;
                 -webkit-margin-start: 16em;
-                        margin-inline-start: 16em;
+                margin-inline-start: 16em;
             }
             h1 {
                 width: 100%;
                 -webkit-margin-start: 15em;
-                        margin-inline-start: 15em;
+                margin-inline-start: 15em;
+            }
+        } 
+    }
+    @media (max-width: 1024px){
+        .location{
+            #search {
+                width: 11%;
+            }
+        } 
+        .select{
+            h2 {
+                width: 100%;
+                -webkit-margin-start: 8em;
+                margin-inline-start: 8em;
+            }
+            h1 {
+                width: 100%;
+                -webkit-margin-start: 8em;
+                margin-inline-start: 8em;
+            }
+        } 
+    }
+    @media (max-width: 768px){
+        .location{
+            #search {
+                width: 15%;
+            }
+        } 
+        .select{
+            h2 {
+                margin-inline-start: 2em;
+            }
+            h1 {
+                margin-inline-start: 4em;
+            }
+        } 
+    }
+    @media (max-width: 425px){
+        .location{
+            #search {
+                width: 30%;
+            }
+        } 
+        .select{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 0 0 50px 0;
+            justify-content: center;
+            h1{
+                width: 75%;
+                margin-inline-start: 1em;
+            }
+            h2{
+                width: 75%;
+                margin-inline-start: 1em;
+            }
+        } 
+    }
+    @media (max-width: 375px){
+        .location{
+            #search {
+                width: 30%;
+            }
+        } 
+        .select{
+            h2 {
+                width: 100%;
+                margin-inline-start: 2em;
+            }
+            h1 {
+                width: 100%;
+                margin-inline-start: 2em;
             }
         } 
     }
@@ -337,51 +382,6 @@ main{
             }
         }
     }
-    @media (max-width: 425px) {
-        #restaurants{
-            .restaurants_images{
-                .new {
-                    left: 15em;
-                }
-            }
-        } 
-        
-    }
-    @media (max-width: 768px) { 
-        #restaurants{
-            .restaurants_images{
-                height: 15rem;
-                .new {
-                    left: 30em;
-                }
-            }
-            .container_description {
-                width: 90%;
-            }
-        } 
-    }
-    @media (max-width: 1024px) { 
-        #restaurants{
-            .container_restaurants{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                .restaurant_map{
-                    width: 49%;
-                    .restaurants_images{
-                        height: 15rem;
-                        .new {
-                            left: 19em;
-                        }
-                    }
-                }
-                .container_description {
-                    width: 90%;
-                }   
-            }
-            
-        } 
-    }
     @media (max-width: 1440px) { 
         #restaurants{
             .container_restaurants{
@@ -404,7 +404,62 @@ main{
             
         } 
     }
-    
+    @media (max-width: 1024px) { 
+        #restaurants{
+            .container_restaurants{
+                .restaurant_map{
+                    .restaurants_images{
+                        .new {
+                            left: 19em;
+                        }
+                    }
+                }  
+            }
+        } 
+    }
+    @media (max-width: 768px) { 
+        #restaurants{
+            .container_restaurants{
+                .restaurant_map{
+                    .restaurants_images{
+                        height: 12rem;
+                        .new {
+                            left: 13em;
+                        }
+                    }
+                }  
+            } 
+        } 
+    }
+    @media (max-width: 425px) {
+        #restaurants{
+            .container_restaurants{
+                .restaurant_map{
+                    width: 100%;
+                    .restaurants_images{
+                        height: 12rem;
+                        .new {
+                            left: 15em;
+                        }
+                    }
+                }  
+            } 
+        }  
+    }
+    @media (max-width: 375px) {
+        #restaurants{
+            .container_restaurants{
+                .restaurant_map{
+                    .restaurants_images{
+                        height: 10rem;
+                        .new {
+                            left: 12em;
+                        }
+                    }
+                }  
+            } 
+        }
+    }
 }
 
 .restaurant_info{
@@ -462,11 +517,11 @@ main{
         left: 20px;
         color: #FFF;
     }
-    @media (max-width: 768px) { 
+    @media (max-width: 1440px){
         justify-content: space-between;
         .option{
-            width: 30%;
-        }
+            width: 15%;
+        } 
     }
     @media (max-width: 1024px){
         justify-content: space-between;
@@ -474,11 +529,11 @@ main{
             width: 20%;
         } 
     }
-    @media (max-width: 1440px){
+    @media (max-width: 768px) { 
         justify-content: space-between;
         .option{
-            width: 15%;
-        } 
+            width: 30%;
+        }
     }
 }
 #main_menu{

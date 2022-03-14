@@ -154,15 +154,19 @@ header .select .exploration {
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
   header .location #search {
-    width: 15%;
+    width: 10%;
   }
   header .select h2 {
-    width: 90%;
+    width: 100%;
+    -webkit-margin-start: 16em;
+    margin-inline-start: 16em;
   }
   header .select h1 {
-    width: 65%;
+    width: 100%;
+    -webkit-margin-start: 15em;
+    margin-inline-start: 15em;
   }
 }
 @media (max-width: 1024px) {
@@ -180,19 +184,48 @@ header .select .exploration {
     margin-inline-start: 8em;
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 768px) {
   header .location #search {
-    width: 10%;
+    width: 15%;
+  }
+  header .select h2 {
+    margin-inline-start: 2em;
+  }
+  header .select h1 {
+    margin-inline-start: 4em;
+  }
+}
+@media (max-width: 425px) {
+  header .location #search {
+    width: 30%;
+  }
+  header .select {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 0 50px 0;
+    justify-content: center;
+  }
+  header .select h1 {
+    width: 75%;
+    margin-inline-start: 1em;
+  }
+  header .select h2 {
+    width: 75%;
+    margin-inline-start: 1em;
+  }
+}
+@media (max-width: 375px) {
+  header .location #search {
+    width: 30%;
   }
   header .select h2 {
     width: 100%;
-    -webkit-margin-start: 16em;
-    margin-inline-start: 16em;
+    margin-inline-start: 2em;
   }
   header .select h1 {
     width: 100%;
-    -webkit-margin-start: 15em;
-    margin-inline-start: 15em;
+    margin-inline-start: 2em;
   }
 }
 
@@ -323,41 +356,6 @@ main .favorite i.fas {
   transition: transform 0.2s;
   cursor: pointer;
 }
-@media (max-width: 425px) {
-  main #restaurants .restaurants_images .new {
-    left: 15em;
-  }
-}
-@media (max-width: 768px) {
-  main #restaurants .restaurants_images {
-    height: 15rem;
-  }
-  main #restaurants .restaurants_images .new {
-    left: 30em;
-  }
-  main #restaurants .container_description {
-    width: 90%;
-  }
-}
-@media (max-width: 1024px) {
-  main #restaurants .container_restaurants {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  main #restaurants .container_restaurants .restaurant_map {
-    width: 49%;
-  }
-  main #restaurants .container_restaurants .restaurant_map .restaurants_images {
-    height: 15rem;
-  }
-  main #restaurants .container_restaurants .restaurant_map .restaurants_images .new {
-    left: 19em;
-  }
-  main #restaurants .container_restaurants .container_description {
-    width: 90%;
-  }
-}
 @media (max-width: 1440px) {
   main #restaurants .container_restaurants {
     display: flex;
@@ -375,6 +373,38 @@ main .favorite i.fas {
   }
   main #restaurants .container_restaurants .container_description {
     width: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  main #restaurants .container_restaurants .restaurant_map .restaurants_images .new {
+    left: 19em;
+  }
+}
+@media (max-width: 768px) {
+  main #restaurants .container_restaurants .restaurant_map .restaurants_images {
+    height: 12rem;
+  }
+  main #restaurants .container_restaurants .restaurant_map .restaurants_images .new {
+    left: 13em;
+  }
+}
+@media (max-width: 425px) {
+  main #restaurants .container_restaurants .restaurant_map {
+    width: 100%;
+  }
+  main #restaurants .container_restaurants .restaurant_map .restaurants_images {
+    height: 12rem;
+  }
+  main #restaurants .container_restaurants .restaurant_map .restaurants_images .new {
+    left: 15em;
+  }
+}
+@media (max-width: 375px) {
+  main #restaurants .container_restaurants .restaurant_map .restaurants_images {
+    height: 10rem;
+  }
+  main #restaurants .container_restaurants .restaurant_map .restaurants_images .new {
+    left: 12em;
   }
 }
 
@@ -434,12 +464,12 @@ main .favorite i.fas {
   left: 20px;
   color: #FFF;
 }
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
   .select_list {
     justify-content: space-between;
   }
   .select_list .option {
-    width: 30%;
+    width: 15%;
   }
 }
 @media (max-width: 1024px) {
@@ -450,12 +480,12 @@ main .favorite i.fas {
     width: 20%;
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 768px) {
   .select_list {
     justify-content: space-between;
   }
   .select_list .option {
-    width: 15%;
+    width: 30%;
   }
 }
 
