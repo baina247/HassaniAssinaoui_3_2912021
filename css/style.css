@@ -441,168 +441,189 @@
     left: 35em;
   }
 }
-#main_menu {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto";
+@media screen and (min-width: 375px) {
+  #main_menu {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+  }
+  #main_menu h1 {
+    display: block;
+    width: 100%;
+    font-family: Shrikhand;
+    font-size: 25px;
+  }
+  #main_menu h2 {
+    display: inline-block;
+    border-bottom: 3px solid #99E2D0;
+    padding-bottom: 5px;
+    width: 18%;
+  }
+  #main_menu h4 {
+    display: block;
+    width: 100%;
+    font-family: "Roboto";
+    font-weight: bolder;
+    -webkit-margin-before: 0em;
+    margin-block-start: 0em;
+    -webkit-margin-after: 0em;
+    margin-block-end: 0em;
+  }
+  #main_menu .restaurant_palette_du_gout {
+    background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  }
+  #main_menu .restaurant_note_enchantee {
+    background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  }
+  #main_menu .restaurant_a_la_francaise {
+    background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  }
+  #main_menu .restaurant_delice_des_sens {
+    background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  }
+  #main_menu p {
+    -webkit-margin-before: 0em;
+    margin-block-start: 0em;
+    -webkit-margin-after: 0em;
+    margin-block-end: 0em;
+    font-size: 15px;
+  }
+  #main_menu .restaurants_menu {
+    width: 100%;
+    height: 15rem;
+    background-size: cover;
+    background-position: center;
+  }
+  #main_menu .container_carte {
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+    background-color: #f6f6f6;
+    position: relative;
+    margin: -1em 0 0 0;
+  }
+  #main_menu .container_carte .carte {
+    display: flex;
+    flex-direction: column;
+  }
+  #main_menu .container_carte .carte .menu__info {
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0 0 1em 0;
+    cursor: pointer;
+    -webkit-animation: itemShow 0.6s;
+    animation: itemShow 0.6s;
+    -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    transform: scale(0);
+    max-width: 100%;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  #main_menu .container_carte .carte .menu__info:hover .menu__confirmation {
+    margin-right: -1rem;
+  }
+  #main_menu .container_carte .carte .menu__info:hover .menu__confirmation .menu__checkIcon {
+    transform: rotate(0);
+  }
+  #main_menu .container_carte .carte .menu__info.delay-0 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+  #main_menu .container_carte .carte .menu__info.delay-1 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+  }
+  #main_menu .container_carte .carte .menu__info.delay-2 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+  }
+  #main_menu .container_carte .carte .menu__info .menu__title {
+    font: message-box;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  #main_menu .container_carte .carte .menu__info .menu__description {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  #main_menu .container_carte .carte .menu__info .container_info {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+  }
+  #main_menu .container_carte .carte .menu__info .menu__price {
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 0.5rem;
+  }
+  #main_menu .container_carte .carte .menu__info .menu__confirmation {
+    background-color: #99e2d0;
+    margin: -1rem -8rem -1rem 1rem;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+  }
+  #main_menu .container_carte .carte .menu__info .menu__confirmation .menu__checkIcon {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(360deg);
+    transition-duration: 1s;
+  }
+  #main_menu .container_carte .carte .menu__info .menu__confirmation .menu__checkIcon .menu__icon {
+    color: #99E2D0;
+  }
+  #main_menu .order {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 0 30px 0;
+  }
+  #main_menu .order .exploration {
+    text-align: center;
+    border-radius: 20px;
+    color: #FFF;
+    padding: 10px;
+    width: 40%;
+    background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+  }
 }
-#main_menu h1 {
-  display: block;
-  width: 100%;
-  font-family: Shrikhand;
-  font-size: 25px;
+@media screen and (min-width: 1024px) {
+  #main_menu .restaurants_menu {
+    height: 20rem;
+  }
+  #main_menu .container_carte {
+    margin: -1em 5em 0 5em;
+  }
+  #main_menu .container_carte .carte .menu__info .menu__confirmation {
+    margin: -1rem -9rem -1rem 1rem;
+  }
+  #main_menu h2 {
+    width: 60px;
+  }
 }
-#main_menu h2 {
-  display: inline-block;
-  border-bottom: 3px solid #99E2D0;
-  padding-bottom: 5px;
-  width: 18%;
-}
-#main_menu h4 {
-  display: block;
-  width: 100%;
-  font-family: "Roboto";
-  font-weight: bolder;
-  -webkit-margin-before: 0em;
-  margin-block-start: 0em;
-  -webkit-margin-after: 0em;
-  margin-block-end: 0em;
-}
-#main_menu .restaurant_palette_du_gout {
-  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-}
-#main_menu .restaurant_note_enchantee {
-  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-}
-#main_menu .restaurant_a_la_francaise {
-  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-}
-#main_menu .restaurant_delice_des_sens {
-  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-}
-#main_menu p {
-  -webkit-margin-before: 0em;
-  margin-block-start: 0em;
-  -webkit-margin-after: 0em;
-  margin-block-end: 0em;
-  font-size: 15px;
-}
-#main_menu .restaurants_menu {
-  width: 100%;
-  height: 15rem;
-  background-size: cover;
-  background-position: center;
-}
-#main_menu .container_carte {
-  padding: 20px;
-  border-radius: 20px 20px 0 0;
-  background-color: #f6f6f6;
-  position: relative;
-  margin: -1em 0 0 0;
-}
-#main_menu .container_carte .carte {
-  display: flex;
-  flex-direction: column;
-}
-#main_menu .container_carte .carte .menu__info {
-  border-radius: 15px;
-  padding: 10px;
-  margin: 0 0 1em 0;
-  cursor: pointer;
-  -webkit-animation: itemShow 0.6s;
-  animation: itemShow 0.6s;
-  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  transform: scale(0);
-  max-width: 100%;
-  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-}
-#main_menu .container_carte .carte .menu__info:hover .menu__confirmation {
-  margin-right: -1rem;
-}
-#main_menu .container_carte .carte .menu__info:hover .menu__confirmation .menu__checkIcon {
-  transform: rotate(0);
-}
-#main_menu .container_carte .carte .menu__info.delay-0 {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-}
-#main_menu .container_carte .carte .menu__info.delay-1 {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-#main_menu .container_carte .carte .menu__info.delay-2 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-#main_menu .container_carte .carte .menu__info .menu__title {
-  font: message-box;
-  margin: 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-#main_menu .container_carte .carte .menu__info .menu__description {
-  margin: 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-#main_menu .container_carte .carte .menu__info .container_info {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  width: 100%;
-}
-#main_menu .container_carte .carte .menu__info .menu__price {
-  font-weight: 700;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding-left: 0.5rem;
-}
-#main_menu .container_carte .carte .menu__info .menu__confirmation {
-  background-color: #99e2d0;
-  margin: -1rem -8rem -1rem 1rem;
-  width: 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-duration: 0.5s;
-}
-#main_menu .container_carte .carte .menu__info .menu__confirmation .menu__checkIcon {
-  height: 1.6rem;
-  width: 1.6rem;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100px;
-  transform: rotate(360deg);
-  transition-duration: 1s;
-}
-#main_menu .container_carte .carte .menu__info .menu__confirmation .menu__checkIcon .menu__icon {
-  color: #99E2D0;
-}
-#main_menu .order {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 30px 0 30px 0;
-}
-#main_menu .order .exploration {
-  text-align: center;
-  border-radius: 20px;
-  color: #FFF;
-  padding: 10px;
-  width: 40%;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+@media screen and (min-width: 1440px) {
+  #main_menu .container_carte {
+    margin: -1em 10em 0 10em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
