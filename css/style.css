@@ -454,7 +454,7 @@
 }
 #main_menu h2 {
   display: inline-block;
-  border-bottom: 5px solid #99E2D0;
+  border-bottom: 3px solid #99E2D0;
   padding-bottom: 5px;
   width: 18%;
 }
@@ -557,6 +557,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  width: 100%;
 }
 #main_menu .container_carte .carte .menu__info .menu__price {
   font-weight: 700;
@@ -567,8 +568,8 @@
 }
 #main_menu .container_carte .carte .menu__info .menu__confirmation {
   background-color: #99e2d0;
-  margin: -1rem -5rem -1rem 1rem;
-  width: 4rem;
+  margin: -1rem -8rem -1rem 1rem;
+  width: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
