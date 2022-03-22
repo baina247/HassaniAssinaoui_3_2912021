@@ -363,6 +363,10 @@
   }
 }
 @media screen and (min-width: 1024px) {
+  header .location #search {
+    width: 15%;
+  }
+
   ol {
     display: flex;
     justify-content: space-between;
@@ -403,6 +407,10 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  header .location #search {
+    width: 11%;
+  }
+
   .select_list .number {
     left: 62em;
   }
@@ -418,10 +426,6 @@
   }
 }
 @media screen and (min-width: 1600px) {
-  header .location #search {
-    width: 8%;
-  }
-
   .select_list .number {
     left: 69em;
   }
@@ -434,6 +438,10 @@
   }
 }
 @media screen and (min-width: 1920px) {
+  header .location #search {
+    width: 8%;
+  }
+
   .select_list .number {
     left: 82.5em;
   }
@@ -445,7 +453,7 @@
     margin: 0 0 50px 0;
   }
   main #restaurants .restaurants_images .new {
-    left: 35em;
+    left: 34em;
   }
 }
 @media screen and (min-width: 375px) {
