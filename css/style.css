@@ -418,6 +418,10 @@
   }
 }
 @media screen and (min-width: 1600px) {
+  header .location #search {
+    width: 8%;
+  }
+
   .select_list .number {
     left: 69em;
   }
@@ -431,12 +435,15 @@
 }
 @media screen and (min-width: 1920px) {
   .select_list .number {
-    left: 83em;
+    left: 82.5em;
   }
   .select_list .number.number_2 {
     left: 42em;
   }
 
+  main #restaurants .restaurant_map {
+    margin: 0 0 50px 0;
+  }
   main #restaurants .restaurants_images .new {
     left: 35em;
   }
