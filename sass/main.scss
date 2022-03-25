@@ -435,6 +435,9 @@
     }
 }
 @media screen and (min-width: 1440px){
+    #acceuil{
+        margin: 0 10em 0 10em;
+    }
     header{
         .location{
             #search{
@@ -444,12 +447,12 @@
     }
     .select_list{
         .number{
-            left: 62em;
+            left: 58.5em;
             &.number_1{
-                left: 1em;
+                left: 10em;
             }
             &.number_2{
-                left: 31.5em;
+                left: 34.5em;
             }
         }
     }
@@ -457,7 +460,7 @@
         #restaurants{
             .restaurants_images{
                 .new{
-                    left: 25em;
+                    left: 20em;
                 }
             }
         }
@@ -466,9 +469,9 @@
 @media screen and (min-width: 1600px){
     .select_list{
         .number{
-            left: 69em;
+            left: 65.5em;
             &.number_2{
-                left: 35em;
+                left: 37.5em;
             }
         }
     }
@@ -476,13 +479,16 @@
         #restaurants{
             .restaurants_images{
                 .new{
-                    left: 28em;
+                    left: 23em;
                 }
             }
         }
     }
 }
 @media screen and (min-width: 1920px){
+    #acceuil{
+        margin: 0 15em 0 15em;
+    }
     header{
         .location{
             #search{
@@ -492,10 +498,13 @@
     }
     .select_list{
         .number{
-            left: 82.5em;
-            &.number_2{
-                left: 42em;
+            left: 77em;
+            &.number_1{
+                left: 15em;
             }
+            &.number_2{
+                left: 46em;
+            }  
         }
     }
     main{
@@ -505,7 +514,7 @@
             }
             .restaurants_images{
                 .new{
-                    left: 34em;
+                    left: 26em;
                 }
             }
         }
@@ -699,6 +708,11 @@
         }
         h2 {
             width: 60px;
+        }
+        .order{
+            .exploration{
+                width: 20%;
+            }
         }  
     }    
 }
@@ -708,4 +722,14 @@
             margin: -1em 10em 0 10em;
         }
     }
+}
+@media screen and (min-width: 1920px){
+    #main_menu{
+        .order{
+            .exploration{
+                width: 10%;
+            }
+        }
+    }
+    
 }
