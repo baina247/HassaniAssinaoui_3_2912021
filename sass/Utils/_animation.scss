@@ -1,15 +1,31 @@
-@keyframes itemShow {
-    0% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1);
-    }
+@-webkit-keyframes itemShow {
+  0% {
+    transform: scale(0);
   }
-  
-  @keyframes loader {
-    100% {
-      opacity: 0;
-      z-index: -10;
-    }
-  } 
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes itemShow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+//animation permetant la disparition après 3sec du loader
+@-webkit-keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}

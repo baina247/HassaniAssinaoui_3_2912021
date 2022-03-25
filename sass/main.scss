@@ -520,6 +520,7 @@
         }
     }
 }
+//Mise en page des pages de menu
 @media screen and (min-width: 375px) {
     #main_menu{
         margin: 0;
@@ -572,7 +573,7 @@
             background-size: cover;
             background-position: center;
         }
-        
+        //Animation des menu + ItemShow dans animation.scss
         .container_carte{
             padding: 20px;
             border-radius: 20px 20px 0 0;
