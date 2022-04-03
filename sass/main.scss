@@ -56,28 +56,6 @@
             -webkit-animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) infinite;
             animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) infinite;
         }
-        
-        @-webkit-keyframes spin {
-            0% { -webkit-transform: rotate(0deg); }
-            100% { -webkit-transform: rotate(360deg); }
-        }
-        
-        @keyframes spin {
-            0% { -webkit-transform: rotate(0deg); }
-            100% { -webkit-transform: rotate(360deg); }
-        }
-        
-        @keyframes spin {
-            0% { 
-                transform: rotate(0deg);
-                opacity: 100%;
-            }
-            
-            100% { 
-                transform: rotate(360deg);
-                opacity: 0%;
-            }
-        }    
     }
     
     header{
@@ -745,5 +723,4 @@
             }
         }
     }
-    
 }
