@@ -234,7 +234,7 @@
                 border-radius: 20px;
                 box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .2);
                 background-color: rgb(246, 246, 246);
-                transition: transform .2s;
+                transition: transform .3s;
                 &:hover{
                     transform: scale(1.1);
                 }
@@ -244,6 +244,13 @@
             font-size: 1.3em;
         }
         .favorite{
+            
+            i{
+                &.fas{
+                    display: none;
+                    cursor: pointer;
+                }
+            }
             &:hover{
                 i{
                     &.far{
@@ -252,20 +259,13 @@
                     &.fas{
                         color: $colour-primary;
                         display: block;
-                        background: linear-gradient(222deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+                        background: $linear-gradient;
                         -webkit-background-clip: text;
                         background-clip: text;
                         -webkit-text-fill-color: transparent;
                     }
                 }
-            }
-            i{
-                &.fas{
-                    display: none;
-                    transition: transform 0.2s;
-                    cursor: pointer;
-                }
-            }
+            } 
         }
     }
     
@@ -691,7 +691,19 @@
         }
     }
 }
-
+@media screen and (min-width: 768px){
+    #main_menu{
+        .container_carte{
+            .carte{
+                .menu__info{
+                    .menu__confirmation {
+                        width: 7rem;
+                    }
+                }
+            }
+        } 
+    }    
+}
 @media screen and (min-width: 1024px){
     #main_menu{
         .restaurants_menu{
@@ -703,6 +715,7 @@
                 .menu__info{
                     .menu__confirmation {
                         margin: -1rem -9rem -1rem 1rem;
+                        width: 8rem;
                     }
                 }
             }

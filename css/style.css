@@ -1,11 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@-webkit-keyframes itemShow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes itemShow {
   0% {
     transform: scale(0);
   }
   100% {
     transform: scale(1);
+  }
+}
+@-webkit-keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
   }
 }
 @keyframes loader {
@@ -249,7 +263,7 @@
     border-radius: 20px;
     box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
     background-color: #f6f6f6;
-    transition: transform 0.2s;
+    transition: transform 0.3s;
   }
   main #restaurants .restaurant_map:hover {
     transform: scale(1.1);
@@ -257,21 +271,20 @@
   main .fa-2x {
     font-size: 1.3em;
   }
+  main .favorite i.fas {
+    display: none;
+    cursor: pointer;
+  }
   main .favorite:hover i.far {
     display: none;
   }
   main .favorite:hover i.fas {
     color: #9356DC;
     display: block;
-    background: linear-gradient(222deg, #9356dc 0%, #ff79da 100%);
+    background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  main .favorite i.fas {
-    display: none;
-    transition: transform 0.2s;
-    cursor: pointer;
   }
 
   .restaurant_info {
@@ -632,6 +645,11 @@
     box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
   }
 }
+@media screen and (min-width: 768px) {
+  #main_menu .container_carte .carte .menu__info .menu__confirmation {
+    width: 7rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   #main_menu .restaurants_menu {
     height: 20rem;
@@ -641,6 +659,7 @@
   }
   #main_menu .container_carte .carte .menu__info .menu__confirmation {
     margin: -1rem -9rem -1rem 1rem;
+    width: 8rem;
   }
   #main_menu h2 {
     width: 60px;
