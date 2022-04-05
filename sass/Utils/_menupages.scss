@@ -15,8 +15,8 @@
             cursor: pointer;
             -webkit-animation: itemShow .6s;
             animation: itemShow .6s;
-            -webkit-animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
             -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
             transform: scale(0);

@@ -23,22 +23,19 @@ main{
         }
         .restaurants_images
         {
-            width: 100%;
             height: 10rem;
             background-size: cover;
             background-position: center;
             border-radius: 20px 20px 0 0;
             .new{
+                background-color: #99e2d0;
+                color: #1b6150;
+                padding: .5rem;
+                border-radius: .125rem;
+                position: absolute;
+                top: 1rem;
+                right: .75rem;
                 display: flex;
-                color: rgb(0, 135, 102);
-                background: $colour-third;
-                font: message-box;
-                width: 30%;
-                border-radius: 5px;
-                justify-content: center;
-                padding: 10px;
-                position: relative;
-                top: 15px; left: 12em;
             }
         }
         .restaurant_palette_du_gout{
@@ -62,6 +59,7 @@ main{
             box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .2);
             background-color: rgb(246, 246, 246);
             transition: transform .3s;
+            position: relative;
             &:hover{
                 transform: scale(1.1);
             }
