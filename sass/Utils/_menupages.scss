@@ -42,16 +42,16 @@
                 animation-delay: 0s;
             }
             &.delay-1{
-                -webkit-animation-delay: .1s;
-                animation-delay: .1s;
-            }
-            &.delay-2{
                 -webkit-animation-delay: .2s;
                 animation-delay: .2s;
             }
+            &.delay-2{
+                -webkit-animation-delay: .4s;
+                animation-delay: .4s;
+            }
             &.delay-3{
-                -webkit-animation-delay: .3s;
-                animation-delay: .3s;
+                -webkit-animation-delay: .6s;
+                animation-delay: .6s;
             }
             .menu__title{
                 font: message-box;

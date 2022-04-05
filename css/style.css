@@ -239,16 +239,16 @@ ol li.select_number::before {
   animation-delay: 0s;
 }
 .container_carte .carte .menu__info.delay-1 {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-.container_carte .carte .menu__info.delay-2 {
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
+.container_carte .carte .menu__info.delay-2 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
 .container_carte .carte .menu__info.delay-3 {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 .container_carte .carte .menu__info .menu__title {
   font: message-box;
