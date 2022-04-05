@@ -17,12 +17,12 @@
     <header>
         <span class="logo_header">ohmyfood</span>
         <!--barre de recherche-->
-        <section class="container_research">
+        <div class="container_research">
             <div class="location">
                 <i class="fas fa-map-marker-alt black_map_marker"></i>
                 <input type="search" name="search" id="search" placeholder="Paris, Belleville" />
             </div>
-        </section>
+        </div>
         <!--exploration restaurant-->
         <section class="select">
             <h1>Réserver le menu qui vous convient</h1>
@@ -37,7 +37,7 @@
         <!--listes des choix-->
         <section class="fonction">
             <h2>Fonctionnement</h2>
-            <div class="container_choice">
+            <nav class="container_choice">
                 <ol>
                     <li class="select_number">
                         <div class="select_list ">
@@ -55,14 +55,14 @@
                         </div>
                     </li>
                 </ol>
-            </div>
+            </nav>
         </section>
         <!--restaurants-->
-        <section>
+        <article>
             <div id="restaurants">
                 <h2 class="restaurant__titre">Restaurants</h2>
-                <article class="container_restaurants">
-                    <div class="restaurant_map">
+                <div class="container_restaurants">
+                    <section class="restaurant_map">
                         <a href="la-palette-du-gout.html"><div class="restaurant_palette_du_gout restaurants_images"><span class="new">Nouveau</span></div></a>
                         <div class=container_description>
                             <div class="restaurant_info">
@@ -74,8 +74,8 @@
                                 <i class="fas fa-heart fa-2x"></i>
                             </div>
                         </div>    
-                    </div>
-                    <div class="restaurant_map">
+                    </section>
+                    <section class="restaurant_map">
                         <a href="la-note-enchantee.html"><div class="restaurant_note_enchantee restaurants_images"><span class="new">Nouveau</span></div></a>
                         <div class="container_description">
                             <div class="restaurant_info">
@@ -87,8 +87,8 @@
                                 <i class="fas fa-heart fa-2x"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="restaurant_map">
+                    </section>
+                    <section class="restaurant_map">
                         <a href="a-la-francaise.html"><div class="restaurant_a_la_francaise restaurants_images"></div></a>
                         <div class="container_description">
                             <div class="restaurant_info">
@@ -100,8 +100,8 @@
                                 <i class="fas fa-heart fa-2x"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="restaurant_map">
+                    </section>
+                    <section class="restaurant_map">
                         <a href="le-delice-des-sens.html"><div class="restaurant_delice_des_sens restaurants_images"></div></a>
                         <div class="container_description">
                             <div class="restaurant_info">
@@ -113,14 +113,14 @@
                                 <i class="fas fa-heart fa-2x"></i>
                             </div>
                         </div>
-                    </div>
-                </article>
+                    </section>
+                </div>
             </div>    
-        </section>
+        </article>
     </main>
     <!--bas de page-->
     <footer id="end_page">
-        <div class="container_footer">
+        <section class="container_footer">
             <span class="logo_footer">ohmyfood</span>
             <div class="proposed footer_choice">
                 <h3><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></h3>
@@ -134,7 +134,7 @@
             <div class="contact footer_choice">
                 <h3><a href="mailto:contact@ohmyfood.fr?subject=Mail">Contact</a></h3>
             </div>
-        </div>
+        </section>
     </footer>    
 </body>
 </html>
