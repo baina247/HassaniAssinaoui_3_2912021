@@ -54,57 +54,144 @@
     opacity: 0%;
   }
 }
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", Shrikhand;
-  font: message-box;
-}
-body .container_logo {
+.select_list {
   display: flex;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  height: 4em;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  margin: 5px;
 }
-body .container_logo i {
-  width: 20%;
-  padding: 0 0 0 20px;
-  font-size: 1em;
+.select_list:hover {
+  background-color: #f5edff;
 }
-body .container_logo span {
-  width: 60%;
-  font-size: 2em;
-  font-style: normal;
+.select_list:hover > .fas {
+  color: #9356DC;
 }
-body .loader_container {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  background-color: rgba(108, 105, 110, 0.9);
-  -webkit-animation: loader 0.01s;
-  animation: loader 0.01s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+.select_list a {
+  color: black;
+  font: message-box;
+  font-weight: 600;
+}
+.select_list > .fas {
+  color: #7e7e7e;
+  width: 10%;
+  align-self: center;
+  -moz-text-align-last: center;
+  text-align-last: center;
+}
+
+.container_carte {
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+  background-color: #f6f6f6;
+  position: relative;
+  margin: -1em 0 0 0;
+}
+.container_carte .carte {
+  display: flex;
+  flex-direction: column;
+}
+.container_carte .carte .menu__info {
+  border-radius: 15px;
+  padding: 10px;
+  margin: 0 0 1em 0;
+  cursor: pointer;
+  -webkit-animation: itemShow 0.6s;
+  animation: itemShow 0.6s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  z-index: 10000;
+  transform: scale(0);
+  max-width: 100%;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.container_carte .carte .menu__info:hover .menu__confirmation {
+  margin-right: -1rem;
+}
+.container_carte .carte .menu__info:hover .menu__confirmation .menu__checkIcon {
+  transform: rotate(0);
+}
+.container_carte .carte .menu__info.delay-0 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.container_carte .carte .menu__info.delay-1 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.container_carte .carte .menu__info.delay-2 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.container_carte .carte .menu__info .menu__title {
+  font: message-box;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.container_carte .carte .menu__info .menu__description {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.container_carte .carte .menu__info .container_info {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
+.container_carte .carte .menu__info .menu__price {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 0.5rem;
+}
+.container_carte .carte .menu__info .menu__confirmation {
+  background-color: #99e2d0;
+  margin: -1rem -8rem -1rem 1rem;
+  width: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-duration: 0.5s;
 }
-body .loader {
-  border: 16px solid #bb50d6;
-  border-radius: 50%;
-  border-top: 16px solid #ff79da;
-  border-bottom: 16px solid #9356dc;
-  border-left: 16px solid #99E2D0;
-  width: 6em;
-  height: 6em;
-  -webkit-animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) infinite;
-  animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) infinite;
+.container_carte .carte .menu__info .menu__confirmation .menu__checkIcon {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+.container_carte .carte .menu__info .menu__confirmation .menu__checkIcon .menu__icon {
+  color: #99E2D0;
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 30px 0 30px 0;
+}
+.order .exploration {
+  text-align: center;
+  border-radius: 20px;
+  color: #FFF;
+  padding: 10px;
+  width: 40%;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 header .logo_header {
@@ -179,6 +266,58 @@ footer .container_footer .fas {
 }
 footer .container_footer .footer_choice {
   width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Shrikhand;
+  font: message-box;
+}
+body .container_logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+body .container_logo i {
+  width: 20%;
+  padding: 0 0 0 20px;
+  font-size: 1em;
+}
+body .container_logo span {
+  width: 60%;
+  font-size: 2em;
+  font-style: normal;
+}
+body .loader_container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(108, 105, 110, 0.9);
+  -webkit-animation: loader 0.01s;
+  animation: loader 0.01s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .loader {
+  border: 16px solid #bb50d6;
+  border-radius: 50%;
+  border-top: 16px solid #ff79da;
+  border-bottom: 16px solid #9356dc;
+  border-left: 16px solid #99E2D0;
+  width: 6em;
+  height: 6em;
+  -webkit-animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) infinite;
+  animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) infinite;
 }
 
 ol {
@@ -321,33 +460,6 @@ main .favorite:hover i.fas {
   width: 85%;
 }
 
-.select_list {
-  display: flex;
-  background-color: #f6f6f6;
-  border-radius: 25px;
-  height: 4em;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.select_list:hover {
-  background-color: #f5edff;
-}
-.select_list:hover > .fas {
-  color: #9356DC;
-}
-.select_list a {
-  color: black;
-  font: message-box;
-  font-weight: 600;
-}
-.select_list > .fas {
-  color: #7e7e7e;
-  width: 10%;
-  align-self: center;
-  -moz-text-align-last: center;
-  text-align-last: center;
-}
-
 @media screen and (min-width: 425px) {
   header .select h1 {
     padding: 0 20px 0 20px;
@@ -446,171 +558,59 @@ main .favorite:hover i.fas {
     left: 26em;
   }
 }
-@media screen and (min-width: 375px) {
-  #main_menu {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto";
-  }
-  #main_menu h1 {
-    display: block;
-    width: 100%;
-    font-family: Shrikhand;
-    font-size: 25px;
-  }
-  #main_menu h2 {
-    display: inline-block;
-    border-bottom: 3px solid #99E2D0;
-    padding-bottom: 5px;
-    width: 18%;
-  }
-  #main_menu h4 {
-    display: block;
-    width: 100%;
-    font-family: "Roboto";
-    font-weight: bolder;
-    -webkit-margin-before: 0em;
-    margin-block-start: 0em;
-    -webkit-margin-after: 0em;
-    margin-block-end: 0em;
-  }
-  #main_menu .restaurant_palette_du_gout {
-    background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-  }
-  #main_menu .restaurant_note_enchantee {
-    background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-  }
-  #main_menu .restaurant_a_la_francaise {
-    background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-  }
-  #main_menu .restaurant_delice_des_sens {
-    background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-  }
-  #main_menu p {
-    -webkit-margin-before: 0em;
-    margin-block-start: 0em;
-    -webkit-margin-after: 0em;
-    margin-block-end: 0em;
-    font-size: 15px;
-  }
-  #main_menu .restaurants_menu {
-    width: 100%;
-    height: 15rem;
-    background-size: cover;
-    background-position: center;
-  }
-  #main_menu .container_carte {
-    padding: 20px;
-    border-radius: 20px 20px 0 0;
-    background-color: #f6f6f6;
-    position: relative;
-    margin: -1em 0 0 0;
-  }
-  #main_menu .container_carte .carte {
-    display: flex;
-    flex-direction: column;
-  }
-  #main_menu .container_carte .carte .menu__info {
-    border-radius: 15px;
-    padding: 10px;
-    margin: 0 0 1em 0;
-    cursor: pointer;
-    -webkit-animation: itemShow 0.6s;
-    animation: itemShow 0.6s;
-    -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    transform: scale(0);
-    max-width: 100%;
-    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-  }
-  #main_menu .container_carte .carte .menu__info:hover .menu__confirmation {
-    margin-right: -1rem;
-  }
-  #main_menu .container_carte .carte .menu__info:hover .menu__confirmation .menu__checkIcon {
-    transform: rotate(0);
-  }
-  #main_menu .container_carte .carte .menu__info.delay-0 {
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
-  }
-  #main_menu .container_carte .carte .menu__info.delay-1 {
-    -webkit-animation-delay: 0.1s;
-    animation-delay: 0.1s;
-  }
-  #main_menu .container_carte .carte .menu__info.delay-2 {
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
-  }
-  #main_menu .container_carte .carte .menu__info .menu__title {
-    font: message-box;
-    margin: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
-  #main_menu .container_carte .carte .menu__info .menu__description {
-    margin: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
-  #main_menu .container_carte .carte .menu__info .container_info {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    width: 100%;
-  }
-  #main_menu .container_carte .carte .menu__info .menu__price {
-    font-weight: 700;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-left: 0.5rem;
-  }
-  #main_menu .container_carte .carte .menu__info .menu__confirmation {
-    background-color: #99e2d0;
-    margin: -1rem -8rem -1rem 1rem;
-    width: 8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.5s;
-  }
-  #main_menu .container_carte .carte .menu__info .menu__confirmation .menu__checkIcon {
-    height: 1.6rem;
-    width: 1.6rem;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    transform: rotate(360deg);
-    transition-duration: 1s;
-  }
-  #main_menu .container_carte .carte .menu__info .menu__confirmation .menu__checkIcon .menu__icon {
-    color: #99E2D0;
-  }
-  #main_menu .order {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 30px 0 30px 0;
-  }
-  #main_menu .order .exploration {
-    text-align: center;
-    border-radius: 20px;
-    color: #FFF;
-    padding: 10px;
-    width: 40%;
-    background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
-  }
+#main_menu {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
 }
+#main_menu h1 {
+  display: block;
+  width: 100%;
+  font-family: Shrikhand;
+  font-size: 25px;
+}
+#main_menu h2 {
+  display: inline-block;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+  width: 18%;
+}
+#main_menu h4 {
+  display: block;
+  width: 100%;
+  font-family: "Roboto";
+  font-weight: bolder;
+  -webkit-margin-before: 0em;
+  margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+  margin-block-end: 0em;
+}
+#main_menu .restaurant_palette_du_gout {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+#main_menu .restaurant_note_enchantee {
+  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+#main_menu .restaurant_a_la_francaise {
+  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+#main_menu .restaurant_delice_des_sens {
+  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+#main_menu p {
+  -webkit-margin-before: 0em;
+  margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+  margin-block-end: 0em;
+  font-size: 15px;
+}
+#main_menu .restaurants_menu {
+  width: 100%;
+  height: 15rem;
+  background-size: cover;
+  background-position: center;
+}
+
 @media screen and (min-width: 768px) {
   #main_menu .container_carte .carte .menu__info .menu__confirmation {
     width: 7rem;

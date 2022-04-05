@@ -1,0 +1,117 @@
+//Animation des menu + ItemShow dans animation.scss
+.container_carte{
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+    background-color: rgb(246, 246, 246);
+    position: relative;
+    margin: -1em 0 0 0;
+    .carte{
+        display: flex;
+        flex-direction: column;
+        .menu__info{
+            border-radius: 15px;
+            padding: 10px;
+            margin: 0 0 1em 0;
+            cursor: pointer;
+            -webkit-animation: itemShow .6s;
+            animation: itemShow .6s;
+            -webkit-animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            transform: scale(0);
+            max-width: 100%;
+            box-shadow: $box-shadow;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            &:hover{
+                .menu__confirmation{
+                    margin-right: -1rem;
+                    .menu__checkIcon{
+                        transform: rotate(0);
+                    }
+                }
+            }
+            &.delay-0{
+                -webkit-animation-delay: 0s;
+                animation-delay: 0s;
+            }
+            &.delay-1{
+                -webkit-animation-delay: .1s;
+                animation-delay: .1s;
+            }
+            &.delay-2{
+                -webkit-animation-delay: .2s;
+                animation-delay: .2s;
+            }
+            .menu__title{
+                font: message-box;
+                margin: 0;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .menu__description{
+                margin: 0;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .container_info{
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                width: 100%;
+            }
+            .menu__price{
+                font-weight: 700;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                padding-left: .5rem;
+            }
+            .menu__confirmation {
+                background-color: #99e2d0;
+                margin: -1rem -8rem -1rem 1rem;
+                width: 8rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition-duration: .5s;
+                .menu__checkIcon{
+                    height: 1.6rem;
+                    width: 1.6rem;
+                    background-color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100px;
+                    transform: rotate(360deg);
+                    transition-duration: 1s;
+                    .menu__icon{
+                        color: $colour-third;
+                    }
+                }
+                
+            }
+            
+        }
+    }
+}
+
+.order{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    .exploration{
+        text-align: center;
+        border-radius: 20px;
+        color: #FFF;
+        padding: 10px;
+        width: 40%;
+        background: $linear-gradient;
+        box-shadow: $box-shadow;
+    }
+}

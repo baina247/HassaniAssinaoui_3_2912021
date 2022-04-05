@@ -1,0 +1,22 @@
+footer{
+    background-color: $colour-gray;
+    color: #FFF;
+    padding: 20px;
+    .logo_footer{
+        display: block;
+        width: 100%;
+        font-family: Shrikhand;
+        font-size: 20px;
+    }
+    .container_footer{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 10px;
+        .fas{
+            padding: 0 10px 0 0;
+        }
+        .footer_choice{
+            width: 100%;
+        }
+    }
+}
