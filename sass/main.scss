@@ -3,11 +3,12 @@
 @import "./utils/animation";
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/homepages";
 @import "./utils/fonctions";
 @import "./utils/menupages";
 @import "./utils/header";
 @import "./utils/footer";
-@import "./utils/homepage";
+
 
 body{
     margin: 0;
@@ -60,32 +61,16 @@ body{
         animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) infinite;
     }
     
-}
-ol{
-    -webkit-padding-start: 10px;
-    padding-inline-start: 10px;
-    counter-reset: listCounter;
-    li{
-        list-style: none;
-        padding: 0 0 20px 0;
-        counter-increment: listCounter;
-        &.select_number::before{
-            content: counter(listCounter);
-            background: $colour-primary;
-            height: 1.5rem;
-            width: 1.5rem;
-            border-radius: 100px;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            position: relative;
-            left: -.75rem;
-            top: 2.8rem;
+    a{
+        text-decoration: none;
+        color: #FFF;
+        &:visited{
+            color: unset;
         }
     }
-    
 }
+
+
 
 .restaurant_info{
     -moz-text-align-last: start;

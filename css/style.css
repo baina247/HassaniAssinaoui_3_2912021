@@ -54,6 +54,119 @@
     opacity: 0%;
   }
 }
+main {
+  margin: 20px;
+  font-family: "Roboto", Shrikhand;
+  font: message-box;
+}
+main .title {
+  display: flex;
+  align-items: center;
+}
+main #restaurants {
+  margin: 0 0 60px 0;
+}
+main #restaurants p {
+  -webkit-margin-before: 0px;
+  margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+  margin-block-end: 0px;
+}
+main #restaurants h4 {
+  -webkit-margin-before: 0px;
+  margin-block-start: 0px;
+  -webkit-margin-after: 5px;
+  margin-block-end: 5px;
+}
+main #restaurants .restaurants_images {
+  width: 100%;
+  height: 10rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px 20px 0 0;
+}
+main #restaurants .restaurants_images .new {
+  display: flex;
+  color: #008766;
+  background: #99E2D0;
+  font: message-box;
+  width: 30%;
+  border-radius: 5px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  top: 15px;
+  left: 12em;
+}
+main #restaurants .restaurant_palette_du_gout {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+main #restaurants .restaurant_note_enchantee {
+  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+main #restaurants .restaurant_a_la_francaise {
+  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+main #restaurants .restaurant_delice_des_sens {
+  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+main #restaurants .restaurant_map {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 0 20px 0;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f6f6f6;
+  transition: transform 0.3s;
+}
+main #restaurants .restaurant_map:hover {
+  transform: scale(1.1);
+}
+main .fa-2x {
+  font-size: 1.3em;
+}
+main .favorite i.fas {
+  display: none;
+  cursor: pointer;
+}
+main .favorite:hover i.far {
+  display: none;
+}
+main .favorite:hover i.fas {
+  color: #9356DC;
+  display: block;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ol {
+  -webkit-padding-start: 10px;
+  padding-inline-start: 10px;
+  counter-reset: listCounter;
+}
+ol li {
+  list-style: none;
+  padding: 0 0 20px 0;
+  counter-increment: listCounter;
+}
+ol li.select_number::before {
+  content: counter(listCounter);
+  background: #9356DC;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  left: -0.75rem;
+  top: 2.8rem;
+}
+
 .select_list {
   display: flex;
   background-color: #f6f6f6;
@@ -268,94 +381,6 @@ footer .container_footer .footer_choice {
   width: 100%;
 }
 
-main {
-  margin: 20px;
-  font-family: "Roboto", Shrikhand;
-  font: message-box;
-}
-main .title {
-  display: flex;
-  align-items: center;
-}
-main #restaurants {
-  margin: 0 0 60px 0;
-}
-main #restaurants p {
-  -webkit-margin-before: 0px;
-  margin-block-start: 0px;
-  -webkit-margin-after: 0px;
-  margin-block-end: 0px;
-}
-main #restaurants h4 {
-  -webkit-margin-before: 0px;
-  margin-block-start: 0px;
-  -webkit-margin-after: 5px;
-  margin-block-end: 5px;
-}
-main #restaurants .restaurants_images {
-  width: 100%;
-  height: 10rem;
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px 20px 0 0;
-}
-main #restaurants .restaurants_images .new {
-  display: flex;
-  color: #008766;
-  background: #99E2D0;
-  font: message-box;
-  width: 30%;
-  border-radius: 5px;
-  justify-content: center;
-  padding: 10px;
-  position: relative;
-  top: 15px;
-  left: 12em;
-}
-main #restaurants .restaurant_palette_du_gout {
-  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-}
-main #restaurants .restaurant_note_enchantee {
-  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-}
-main #restaurants .restaurant_a_la_francaise {
-  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-}
-main #restaurants .restaurant_delice_des_sens {
-  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-}
-main #restaurants .restaurant_map {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 0 0 20px 0;
-  border-radius: 20px;
-  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
-  background-color: #f6f6f6;
-  transition: transform 0.3s;
-}
-main #restaurants .restaurant_map:hover {
-  transform: scale(1.1);
-}
-main .fa-2x {
-  font-size: 1.3em;
-}
-main .favorite i.fas {
-  display: none;
-  cursor: pointer;
-}
-main .favorite:hover i.far {
-  display: none;
-}
-main .favorite:hover i.fas {
-  color: #9356DC;
-  display: block;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -407,30 +432,12 @@ body .loader {
   -webkit-animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) infinite;
   animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) infinite;
 }
-
-ol {
-  -webkit-padding-start: 10px;
-  padding-inline-start: 10px;
-  counter-reset: listCounter;
+body a {
+  text-decoration: none;
+  color: #FFF;
 }
-ol li {
-  list-style: none;
-  padding: 0 0 20px 0;
-  counter-increment: listCounter;
-}
-ol li.select_number::before {
-  content: counter(listCounter);
-  background: #9356DC;
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: 100px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  position: relative;
-  left: -0.75rem;
-  top: 2.8rem;
+body a:visited {
+  color: unset;
 }
 
 .restaurant_info {
