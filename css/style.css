@@ -268,91 +268,6 @@ footer .container_footer .footer_choice {
   width: 100%;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", Shrikhand;
-  font: message-box;
-}
-body .container_logo {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-}
-body .container_logo i {
-  width: 20%;
-  padding: 0 0 0 20px;
-  font-size: 1em;
-}
-body .container_logo span {
-  width: 60%;
-  font-size: 2em;
-  font-style: normal;
-}
-body .loader_container {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  background-color: rgba(108, 105, 110, 0.9);
-  -webkit-animation: loader 0.01s;
-  animation: loader 0.01s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  z-index: 10000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-body .loader {
-  border: 16px solid #bb50d6;
-  border-radius: 50%;
-  border-top: 16px solid #ff79da;
-  border-bottom: 16px solid #9356dc;
-  border-left: 16px solid #99E2D0;
-  width: 6em;
-  height: 6em;
-  -webkit-animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) infinite;
-  animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) infinite;
-}
-
-ol {
-  -webkit-padding-start: 10px;
-  padding-inline-start: 10px;
-  counter-reset: listCounter;
-}
-ol li {
-  list-style: none;
-  padding: 0 0 20px 0;
-  counter-increment: listCounter;
-}
-ol li.select_number::before {
-  content: counter(listCounter);
-  background: #9356DC;
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: 100px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  position: relative;
-  left: -0.75rem;
-  top: 2.8rem;
-}
-
-a {
-  text-decoration: none;
-  color: #FFF;
-}
-a:visited {
-  color: unset;
-}
-
 main {
   margin: 20px;
   font-family: "Roboto", Shrikhand;
@@ -439,6 +354,83 @@ main .favorite:hover i.fas {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Shrikhand;
+  font: message-box;
+}
+body .container_logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+body .container_logo i {
+  width: 20%;
+  padding: 0 0 0 20px;
+  font-size: 1em;
+}
+body .container_logo span {
+  width: 60%;
+  font-size: 2em;
+  font-style: normal;
+}
+body .loader_container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(108, 105, 110, 0.9);
+  -webkit-animation: loader 0.01s;
+  animation: loader 0.01s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .loader {
+  border: 16px solid #bb50d6;
+  border-radius: 50%;
+  border-top: 16px solid #ff79da;
+  border-bottom: 16px solid #9356dc;
+  border-left: 16px solid #99E2D0;
+  width: 6em;
+  height: 6em;
+  -webkit-animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) infinite;
+  animation: spin 1s cubic-bezier(0.55, 0.3, 0.51, 0.74) infinite;
+}
+
+ol {
+  -webkit-padding-start: 10px;
+  padding-inline-start: 10px;
+  counter-reset: listCounter;
+}
+ol li {
+  list-style: none;
+  padding: 0 0 20px 0;
+  counter-increment: listCounter;
+}
+ol li.select_number::before {
+  content: counter(listCounter);
+  background: #9356DC;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  left: -0.75rem;
+  top: 2.8rem;
 }
 
 .restaurant_info {

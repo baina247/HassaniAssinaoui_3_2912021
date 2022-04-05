@@ -25,3 +25,11 @@
         
     }
 }
+
+a{
+    text-decoration: none;
+    color: #FFF;
+    &:visited{
+        color: unset;
+    }
+}
