@@ -311,7 +311,7 @@ ol li.select_number::before {
   border-radius: 20px;
   color: #FFF;
   padding: 10px;
-  width: 40%;
+  width: 7rem;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
   font-weight: 700;
@@ -410,8 +410,6 @@ body .container_logo i {
   font-size: 1em;
 }
 body .container_logo span {
-  width: 60%;
-  font-size: 2em;
   font-style: normal;
 }
 body .loader_container {
@@ -657,10 +655,6 @@ body a:visited {
   #main_menu .container_carte {
     margin: -1em 5em 0 5em;
   }
-  #main_menu .container_carte .carte .menu__info .menu__confirmation {
-    margin: -1rem -9rem -1rem 1rem;
-    width: 8rem;
-  }
   #main_menu h2 {
     width: 60px;
   }
@@ -668,14 +662,9 @@ body a:visited {
     width: 20%;
   }
 }
-@media screen and (min-width: 1440px) and (max-width: 1919px) {
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
   #main_menu .container_carte {
     margin: -1em 10em 0 10em;
-  }
-}
-@media screen and (min-width: 1920px) and (max-width: 2560px) {
-  #main_menu .order .exploration {
-    width: 10%;
   }
 }
 
