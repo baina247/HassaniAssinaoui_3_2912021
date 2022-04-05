@@ -49,6 +49,10 @@
                 -webkit-animation-delay: .2s;
                 animation-delay: .2s;
             }
+            &.delay-3{
+                -webkit-animation-delay: .3s;
+                animation-delay: .3s;
+            }
             .menu__title{
                 font: message-box;
                 margin: 0;
@@ -78,7 +82,7 @@
             .menu__confirmation {
                 background-color: #99e2d0;
                 margin: -1rem -8rem -1rem 1rem;
-                width: 8rem;
+                width: 7rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;

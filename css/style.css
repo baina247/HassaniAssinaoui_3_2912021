@@ -246,6 +246,10 @@ ol li.select_number::before {
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
+.container_carte .carte .menu__info.delay-3 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
 .container_carte .carte .menu__info .menu__title {
   font: message-box;
   margin: 0;
@@ -275,7 +279,7 @@ ol li.select_number::before {
 .container_carte .carte .menu__info .menu__confirmation {
   background-color: #99e2d0;
   margin: -1rem -8rem -1rem 1rem;
-  width: 8rem;
+  width: 7rem;
   display: flex;
   align-items: center;
   justify-content: center;
