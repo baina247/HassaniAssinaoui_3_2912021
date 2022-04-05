@@ -305,6 +305,7 @@ ol li.select_number::before {
   width: 40%;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
 }
 
 header .logo_header {
@@ -356,6 +357,7 @@ header .select .exploration {
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
   font: message-box;
+  font-weight: 700;
 }
 
 footer {
