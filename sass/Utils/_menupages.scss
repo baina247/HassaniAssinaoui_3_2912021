@@ -9,16 +9,20 @@
         display: flex;
         flex-direction: column;
         .menu__info{
-            border-radius: 15px;
-            padding: 10px;
-            margin: 0 0 1em 0;
+            background-color: #fff;
+            padding: 1rem;
+            display: flex;
+            border-radius: .75rem;
+            margin: 1rem 0;
+            box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+            overflow: hidden;
             cursor: pointer;
-            -webkit-animation: itemShow .6s;
-            animation: itemShow .6s;
-            -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+            -webkit-animation: itemShow 1s;
+                    animation: itemShow 1s;
+            -webkit-animation-timing-function: cubic-bezier(0.29, 0.67, 0.68, 0.75);
+                    animation-timing-function: cubic-bezier(0.29, 0.67, 0.68, 0.75);
             -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
+                    animation-fill-mode: both;
             transform: scale(0);
             max-width: 100%;
             box-shadow: $box-shadow;
